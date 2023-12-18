@@ -13,10 +13,15 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    /* Use flexbox to align items */
+    justify-content: center;
+    /* Center items horizontally */
 }
 
 nav ul li {
     display: inline;
+    /* Display list items inline */
     margin-right: 20px;
 }
 
