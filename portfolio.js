@@ -1,3 +1,3 @@
 function clickName() {
-    location.href="index.html"
+    location.href="/"
 }
