@@ -11,6 +11,28 @@
     /* Includes padding and border in the width */
 }
 
+/* Body container */
+.body-container {
+    max-width: 1200px;
+    /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    /* Center align the container */
+    padding: 20px;
+    /* Add padding as desired */
+    /* Additional styles for body container if needed */
+}
+
+/* Section container */
+.section-container {
+    margin-bottom: 20px;
+    /* Add bottom margin between sections */
+    padding: 20px;
+    /* Add padding inside each section */
+    border: 1px solid #ccc;
+    /* Add a border around each section */
+    /* Additional styles for section container if needed */
+}
+
 /* Additional styles for demonstration purposes */
 body {
     font-family: Arial, sans-serif;
