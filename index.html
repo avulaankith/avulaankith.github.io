@@ -19,11 +19,20 @@
 
     <div class="body-container">
         <div class="about-me">
-            <h1>About Me</h1>
+            <h1 id="hello">Hello</h1>
+            <h3 id="hello2">Here's who I am & what I do</h3>
             <p>
                 Hi, I'm Ankith Reddy Avula. I'm a passionate developer with a keen interest in creating meaningful and
                 innovative projects. I love to explore new technologies and leverage them to build exciting
                 applications.
+            </p>
+            <p>
+                Currently pursuing a Master of Science in Computer Science at the University of Texas Arlington, I have developed a
+                strong foundation in programming languages such as C++, Java, and Python, as well as a range of technical skills and
+                experience with technologies such as TensorFlow, PyTorch, Flask, Hadoop, Spark, and Git. During my studies, I have also
+                completed several projects that have allowed me to apply my skills in practical settings, including developing an Audio
+                Source separation model for the extraction of 4 different audio categories, a real-time facial emotion recognition
+                system, and a traffic-aware scaling algorithm for the OpenFaaS platform.
             </p>
             <p>
                 Outside of coding, I enjoy hiking, reading, and exploring new cuisines. I'm dedicated to continuous
@@ -38,12 +47,26 @@
             <div class="experience-item">
                 <h3>Research Intern</h3>
                 <p>Samsung India   May 2021 - November 2021</p>
-                <p>Worked on developing and maintaining web applications using JavaScript and React.</p>
+                <ul class="portfolio-li">
+                    <li>Developed an Audio Source separation model for extraction of 4 different audio categories from a given audio track using
+                    TensorFlow, UNets, Auto-Encoders, and Librosa</li>
+                    <li>Designed an Audio separation model which extracts the bass, drums, vocals, and other category audios from the given
+                    audio file implementing Fourier transforms</li>
+                    <li>Deployed a model that generates separated audios of the above categories with a mean absolute error(MAE) of 1.3733</li>
+                </ul>
+                <!-- <p>Worked on developing and maintaining web applications using JavaScript and React.</p> -->
             </div>
             <div class="experience-item">
                 <h3>Data Science Intern</h3>
                 <p>Ismriti - IIT Kanpur   June 2019 - July 2019</p>
-                <p>Collaborated with various clients to create custom websites and web applications.</p>
+                <ul class="portfolio-li">
+                    <li>Developed a real-time facial emotion recognition system that recognizes and classifies the live facial emotion of the
+                    user using Python, CNN, TensorFlow, and OpenCV</li>
+                    <li>Designed a model that classifies the user face emotion into 7 categories namely happy, sad, neutral, fear, angry,
+                    disgust, and surprise</li>
+                    <li>Implemented a model that classifies the live facial expression of the user with an accuracy of 98%</li>
+                </ul>
+                <!-- <p>Collaborated with various clients to create custom websites and web applications.</p> -->
             </div>
             <!-- Add more experience items as needed -->
         </div>
