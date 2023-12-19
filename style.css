@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10%;
+    padding: 0 5%;
     margin-bottom: 2%;
 }
 
@@ -32,6 +32,15 @@
 .topnav a.active {
     background-color: #04AA6D;
     color: white;
+}
+
+.body-container {
+    padding: 0 7%;
+    /* Match the padding of .topnav */
+    margin: 0 auto;
+    /* Center the container */
+    max-width: 1200px;
+    /* Example max-width for the body container */
 }
 
 body {
