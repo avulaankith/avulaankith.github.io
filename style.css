@@ -52,7 +52,7 @@ body {
 /* Existing styles */
 
 /* Additional styles for About Me and Portfolio sections */
-.about-me {
+/* .about-me {
     margin-bottom: 50px;
 }
 
@@ -66,6 +66,50 @@ body {
     font-size: 18px;
     line-height: 1.6;
     color: #555;
+} */
+
+.about-me {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.text-section {
+    flex: 3;
+    /* Allocate more space to text */
+    padding-right: 20px;
+    /* Provide space between text and image */
+}
+
+.text-section h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.image-section {
+    flex: 1;
+    /* Reduce space for the image */
+    order: 1;
+    /* Change the order of the image to appear on the right */
+}
+
+.image-section img {
+    max-width: 100%;
+    /* Set maximum width for the image */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Ensure proper alignment */
+    border-radius: 8px;
+    /* Optional: Add border-radius for rounded corners */
+    align-self: center;
 }
 
 .portfolio {
@@ -198,6 +242,7 @@ body {
 /* Styles for the footer */
 footer {
     /* background-color: rgb(190, 190, 190); */
+    background-color: #f2f2f2;
     padding: 0 10%;
     margin-top: 2%;
 }
