@@ -104,7 +104,7 @@ body {
 /* Existing styles */
 
 /* Additional styles for Experience and Education sections */
-.experience {
+/* .experience {
     margin-bottom: 50px;
 }
 
@@ -130,6 +130,84 @@ body {
 .experience-item p {
     font-size: 16px;
     color: #555;
+} */
+
+/* .experience {
+    margin-bottom: 50px;
+}
+
+.experience h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+} */
+
+/* .experience-item {
+    display: flex;
+    
+    align-items: center;
+   
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+} */
+
+.experience {
+    margin-bottom: 50px;
+}
+
+.experience h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.experience-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    /* Adjust alignment for flex items */
+}
+
+.icon {
+    margin-right: 20px;
+    align-items: center;
+}
+
+.icon img {
+    width: 250px;
+    height: auto;
+    align-self: center;
+}
+
+.text {
+    flex: 1;
+}
+
+.experience-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.experience-item p,
+.experience-item ul {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    /* Maintain consistent spacing */
+}
+
+.experience-item li {
+    margin-bottom: 5px;
+    /* Adjust spacing between list items */
 }
 
 .education {
