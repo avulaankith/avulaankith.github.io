@@ -195,25 +195,42 @@ body {
     font-size: larger;
 }
 
-/* Your styles for the footer */
+/* Styles for the footer */
 footer {
-    background-color: #f2f2f2;
-    padding: 20px 0;
-    text-align: center;
+    /* background-color: rgb(190, 190, 190); */
+    padding: 0 10%;
+    margin-top: 2%;
 }
 
 .footer-content {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
+.footer-content p{
+    padding-right: 40px;
+    float: left;
+}
+
+.social-links {
+    display: flex;
+    float: right;
+}
+
 .social-links a {
-    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
     text-decoration: none;
     color: #333;
 }
 
-.social-links a:hover {
-    color: #007bff;
+.social-links img {
+    width: 18px;
+    /* Adjust the width to match the text size */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-right: 5px;
+    /* Spacing between image and text */
 }
