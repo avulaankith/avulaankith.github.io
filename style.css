@@ -295,7 +295,9 @@ footer {
 
 .social-links {
     display: flex;
-    float: right;
+    float:none;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-links a {
