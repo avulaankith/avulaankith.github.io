@@ -109,6 +109,29 @@ body {
     color: #555;
 }
 
+.portfolio-image img {
+    float: left;
+    height: 5cm;
+    width: 6cm;
+    /* margin-top: 20px; */
+    margin: 2% 3% 1% 2%;
+}
+
+.portfolio-image2 img {
+    float: left;
+    height: 4cm;
+    width: 6cm;
+    /* margin-top: 20px; */
+    margin: 2% 3% 1% 2%;
+}
+
+.portfolio-image3 img {
+    float: left;
+    height: 3cm;
+    width: 6cm;
+    /* margin-top: 20px; */
+    margin: 2% 3% 1% 2%;
+}
 /* Existing styles */
 
 .experience-image img {
