@@ -51,6 +51,14 @@ body {
 
 /* Existing styles */
 
+.myimage img {
+    float: right;
+    height: 9cm;
+    width: 8cm;
+    /* margin-top: 20px; */
+    margin: 2% 2% 1% 2%;
+}
+
 /* Additional styles for About Me and Portfolio sections */
 .about-me {
     margin-bottom: 50px;
@@ -102,6 +110,22 @@ body {
 }
 
 /* Existing styles */
+
+.experience-image img{
+    float: left;
+    height: 5cm;
+    width: 6cm;
+    /* margin-top: 20px; */
+    margin: 2% 2% 1% 2%;
+}
+
+.experience-image2 img {
+    float: left;
+    height: 5cm;
+    width: 6cm;
+    /* margin-top: 20px; */
+    margin: 2% 2% 1% 2%;
+}
 
 /* Additional styles for Experience and Education sections */
 .experience {
@@ -158,6 +182,43 @@ body {
 .education-item p {
     font-size: 16px;
     color: #555;
+}
+
+.education-image img {
+    float: left;
+    height: 3cm;
+    width: 6cm;
+    /* margin-top: 20px; */
+    margin: 2% 2% 1% 2%;
+}
+
+.education-image2{
+    /* margin-right: 20%; */
+    /* padding-right: 15%; */
+    /* margin-left: 12%; */
+}
+
+.education-image2 img {
+    float: left;
+    height: 3cm;
+    width: 3cm;
+    /* margin-top: 20px; */
+    margin: 2% 2% 3% 3%;
+    padding-right: 5%;
+    padding-left: 4.1%;
+}
+
+.teaching-image img {
+    float: left;
+    height: 3cm;
+    width: 6cm;
+    /* margin-top: 20px; */
+    margin: 2% 2% 1% 2%;
+}
+
+#IIITDM {
+    margin-left: 5%;
+    padding-left: 5%;
 }
 
 .teaching {
