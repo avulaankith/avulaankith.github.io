@@ -104,14 +104,14 @@ body {
     color: #555;
 }
 
-.portfolio-li{
+.portfolio-li {
     font-size: 16px;
     color: #555;
 }
 
 /* Existing styles */
 
-.experience-image img{
+.experience-image img {
     float: left;
     height: 5cm;
     width: 6cm;
@@ -192,7 +192,7 @@ body {
     margin: 2% 2% 1% 2%;
 }
 
-.education-image2{
+.education-image2 {
     /* margin-right: 20%; */
     /* padding-right: 15%; */
     /* margin-left: 12%; */
@@ -248,11 +248,12 @@ body {
     font-size: 16px;
     color: #555;
 }
-#hello{
+
+#hello {
     font-size: 60px;
 }
 
-#hello2{
+#hello2 {
     font-size: larger;
 }
 
@@ -270,7 +271,7 @@ footer {
     align-items: center;
 }
 
-.footer-content p{
+.footer-content p {
     padding-right: 40px;
     float: left;
 }
