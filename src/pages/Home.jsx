@@ -7,8 +7,8 @@ function Home() {
     return (
         <>
             <Header></Header>
-        {/* <h1>Jai Jagannath</h1> */}
-        {/* <Home /> */}
+            {/* <h1>Jai Jagannath</h1> */}
+            {/* <Home /> */}
             <MainContent />
             <Footer />
         </>

@@ -5,9 +5,9 @@ import ProjectsMainComponent from "../components/ProjectsMainComponent";
 function Projects() {
     return (
         <>
-            <Header/>
+            <Header />
             <ProjectsMainComponent />
-            <Footer/>
+            <Footer />
         </>
     )
 }

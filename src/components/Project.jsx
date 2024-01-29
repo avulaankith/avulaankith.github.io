@@ -45,22 +45,22 @@ function Project() {
   return (
     <div className="portfolio">
       <h1 ref={addToRefs} className="reveal">Projects</h1>
-      
+
       {projects.map((project, index) => (
         <div key={index} ref={addToRefs} className="portfolio-item reveal">
-        <ProjectItem
-          key={index}
-          title={project.title}
-          description={project.description}
-          imageSrc={project.imageSrc}
-          altText={project.altText}
-          githubLink={project.githubLink}
-          imageClass={project.imageClass}
+          <ProjectItem
+            key={index}
+            title={project.title}
+            description={project.description}
+            imageSrc={project.imageSrc}
+            altText={project.altText}
+            githubLink={project.githubLink}
+            imageClass={project.imageClass}
           />
-          </div>
+        </div>
       ))}
-      
-      
+
+
     </div>
   );
 }
