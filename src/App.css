@@ -1,0 +1,568 @@
+/* importing Poppins font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  margin-bottom: 2%;
+}
+
+.topnav h4 {
+  color: rgb(44, 121, 199);
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  margin-right: auto;
+  /* Pushes h4 to the left */
+}
+
+.topnav a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 14px 16px;
+  transition-duration: 0.5s;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.body-container {
+  padding: 0 10%;
+  /* Match the padding of .topnav */
+  margin: 0 auto;
+  /* Center the container */
+  max-width: 1200px;
+  /* Example max-width for the body container */
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  /* cursor: pointer; */
+}
+
+/* Existing styles */
+
+/* .myimage img {
+    float: right;
+    height: 9cm;
+    width: 8cm;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 2% 2% 1% 2%;
+} */
+
+.myimage svg {
+  float: right;
+  /* height: 10cm; */
+  width: 25em;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  /* margin: 2% 2% 1% 2%; */
+}
+
+.myimage svg path {
+  float: right;
+  width: 20em;
+}
+
+#mask1 {
+  width: 70px;
+}
+
+.newImage {
+  width: 70px;
+}
+
+/* Additional styles for About Me and Portfolio sections */
+.about-me {
+  margin-bottom: 50px;
+}
+
+.about-me h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-me p {
+  font-size: 17.25px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.portfolio {
+  margin-bottom: 50px;
+}
+
+.portfolio h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.portfolio-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  border: 2px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  /* Darker and larger shadow on hover */
+}
+
+.portfolio-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.portfolio-item p {
+  font-size: 16px;
+  color: #555;
+}
+
+.portfolio-li {
+  font-size: 14px;
+  color: #555;
+}
+
+.portfolio-image img {
+  float: left;
+  height: 5.5cm;
+  width: 6cm;
+  margin: 2% 3% 1% 2%;
+}
+
+.portfolio-image2 img {
+  float: left;
+  height: 4.5cm;
+  width: 6cm;
+  margin: 2% 3% 1% 2%;
+}
+
+.portfolio-image3 img {
+  float: left;
+  height: 3.5cm;
+  width: 6cm;
+  margin: 2% 3% 1% 2%;
+}
+
+/* Existing styles */
+
+.experience-image img {
+  float: left;
+  height: 5.75cm;
+  width: 6cm;
+  margin: 2% 2% 1% 2%;
+}
+
+/* Additional styles for Experience and Education sections */
+.experience {
+  margin-bottom: 50px;
+}
+
+.experience h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.experience-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  border: 2px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  /* Darker and larger shadow on hover */
+}
+
+.experience-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.experience-item p {
+  font-size: 16px;
+  color: #555;
+}
+
+.education {
+  margin-bottom: 50px;
+}
+
+.education h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.education-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  border: 2px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  /* Darker and larger shadow on hover */
+}
+
+.education-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.education-item p {
+  font-size: 16px;
+  color: #555;
+}
+
+.education-image img {
+  float: left;
+  height: 3.75cm;
+  width: 6cm;
+  margin: 2% 2% 1% 2%;
+}
+
+.education-image2 img {
+  float: left;
+  height: 4cm;
+  width: 4cm;
+  margin: 2% 2% 3% 3%;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+.teaching-image img {
+  float: left;
+  height: 6cm;
+  width: 6cm;
+  margin: 2% 2% 1% 2%;
+}
+
+#IIITDM {
+  margin-left: 5%;
+  padding-left: 5%;
+}
+
+.teaching {
+  margin-bottom: 50px;
+}
+
+.teaching h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.teaching-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  /* border-radius: 8px; */
+  border-radius: 15px;
+  border: 2px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.teaching-item:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  /* Darker and larger shadow on hover */
+}
+
+.teaching-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.teaching-item p {
+  font-size: 16px;
+  color: #555;
+}
+
+#hello {
+  font-size: 60px;
+}
+
+#hello2 {
+  font-size: larger;
+}
+
+/* Styles for the footer */
+footer {
+  /* background-color: rgb(190, 190, 190); */
+  /* background-color: #f2f2f2; */
+  padding: 0 10%;
+  margin-top: 2%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content p {
+  padding-right: 40px;
+  float: left;
+}
+
+.social-links {
+  display: flex;
+  float: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.1s ease;
+}
+
+.social-links a:hover {
+  border-bottom: 2px solid currentColor;
+  /* Solid border on hover */
+}
+
+.social-links img {
+  width: 24px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.skills-section {
+  padding: 40px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  border: 2px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skills-section:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  /* Darker and larger shadow on hover */
+}
+
+.skills-list {
+  list-style: none;
+  padding: 2% 1%;
+  margin: 0;
+}
+
+.skill-item {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+  /* Adjust as needed */
+}
+
+/* .skill-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+} */
+
+.skill-tooltip {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.skill-item:hover .skill-tooltip {
+  display: block;
+}
+
+.skill-item img {
+  width: 3.25cm;
+  height: auto;
+  /* padding: 1% 100%; */
+  /* margin: 2% 100%; */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .topnav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .myimage svg {
+    width: 100%;
+    /* Full width of the container */
+    height: auto;
+    /* Maintain aspect ratio */
+  }
+
+  .topnav a {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .myimage img,
+  .experience-image img,
+  .experience-image2 img,
+  .education-image img,
+  .education-image2 img,
+  .teaching-image img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    float: none;
+  }
+
+  .about-me h1,
+  .experience h1,
+  .education h1,
+  .teaching h1 {
+    font-size: 28px;
+  }
+
+  .about-me p,
+  .experience-item p,
+  .education-item p,
+  .teaching-item p {
+    font-size: 16px;
+  }
+
+  .skills-list,
+  .social-links {
+    display: block;
+  }
+
+  .skill-item img,
+  .social-links img {
+    width: 50px;
+  }
+
+  .skill-item,
+  .social-links a {
+    margin-bottom: 10px;
+  }
+
+  .portfolio-image,
+  .portfolio-image2,
+  .portfolio-image3 {
+
+    /* Make images responsive */
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  }
+
+  .portfolio-item {
+    /* Adjust portfolio item layout */
+    margin-bottom: 20px;
+  }
+
+  .portfolio-item h3 {
+    /* Adjust heading size */
+    font-size: 20px;
+  }
+
+  .portfolio-item p,
+  .portfolio-li {
+    /* Adjust text size */
+    font-size: 14px;
+  }
+
+  /* Adjust the social-links and footer if needed */
+  .social-links img {
+    width: 20px;
+    /* Adjust as needed */
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(1000px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes splashEffect {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.myimage svg {
+  animation: splashEffect 1s ease-out forwards;
+}
