@@ -13,7 +13,7 @@ function Footer() {
     return (
         <footer>
             <div className="footer-content">
-                <p>© 2024 <span style={{ color: 'rgb(0, 0, 0)', cursor: 'pointer' }} onClick={handleHomeClick}>Ankith Reddy Avula</span>. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} <span style={{ color: 'rgb(0, 0, 0)', cursor: 'pointer' }} onClick={handleHomeClick}>Ankith Reddy Avula</span>. All rights reserved.</p>
                 {location.pathname === '/projects' && <SocialLinks />}
             </div>
         </footer>
