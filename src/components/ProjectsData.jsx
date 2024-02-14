@@ -35,6 +35,17 @@ const projects = [
         imageClass: "portfolio-image2"
     },
     {
+        title: "NEURAL NETWORK FROM SCRATCH IMPLEMENTATION",
+        description: [
+            'The library provides functionalities to build neural network architectures. The Program builds and trains a neural network with NumPy, adjusting weights to learn from data.',
+            'Employs gradient descent for optimization, using numerical methods to find weight adjustments.',
+            "Uses mean squared error on test data to evaluate the network's prediction accuracy."
+        ],
+        imageSrc: "images/nn.png",
+        altText: "Neural Network",
+        imageClass: "portfolio-image3"
+    },
+    {
         title: "MULTI-THREADED FILE SYNC SYSTEM",
         description: [
             'Created a Python-based system enabling seamless file operations (upload, download, rename, delete) between client and server using RPC based communication Protocols.',
