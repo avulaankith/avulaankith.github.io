@@ -37,9 +37,9 @@ const projects = [
     {
         title: "NEURAL NETWORK FROM SCRATCH IMPLEMENTATION",
         description: [
-            'The library provides functionalities to build neural network architectures. The Program builds and trains a neural network with NumPy, adjusting weights to learn from data.',
+            'The library provides functionalities to build neural network architectures. The Program builds and trains a neural network with NumPy in one version and TensorFlow in another, adjusting weights to learn from data.',
             'Employs gradient descent for optimization, using numerical methods to find weight adjustments.',
-            "Uses mean squared error on test data to evaluate the network's prediction accuracy."
+            "Uses Custom mean squared error, cross entropy loss, SVM loss on test data to evaluate the network's prediction accuracy and Performance."
         ],
         imageSrc: "images/nn.png",
         altText: "Neural Network",
