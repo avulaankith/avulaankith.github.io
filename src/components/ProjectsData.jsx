@@ -12,6 +12,18 @@ const projects = [
         imageClass: "portfolio-image"
     },
     {
+        title: "HIGHWAY LANE SEGMENTATION",
+        description: [
+            'Developed a UNet-based convolutional neural network (CNN) architecture using PyTorch.',
+            'Designed specifically for segmenting highway lanes from input images.',
+            'Utilized deep learning techniques to accurately delineate lane boundaries, crucial for applications in autonomous driving and road safety.',
+        ],
+        imageSrc: "images/highway_lane_segmentation.png",
+        altText: "Highway Lane Predictions",
+        githubLink: "https://github.com/avulaankith/Highway-lane-segmentation/",
+        imageClass: "portfolio-image2"
+    },
+    {
         title: "TRAFFIC AWARE SCALING OPTIMIZATION IN OPENFAAS",
         description: [
             'Proposed and Implemented a traffic aware scaling algorithm for the OpenFaaS platform for changing the static parameters during scaling.',
