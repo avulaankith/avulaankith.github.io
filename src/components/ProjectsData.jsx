@@ -69,6 +69,18 @@ const projects = [
         imageClass: "portfolio-image"
     },
     {
+        title: "ATS Resume Scorer",
+        description: [
+            "Designed and implemented a Streamlit-based web application using Python to evaluate resumes against job descriptions with Google's Gemini Pro model.",
+            "Integrated Google's Generative AI to provide a detailed match percentage, identify missing keywords, and generate profile summaries.",
+            'Utilized technologies including Streamlit, PyPDF2, and python-dotenv. Managed virtual environments and streamlined setup processes with comprehensive environment configuration and dependency management.'
+        ],
+        imageSrc: "images/ats_resume_scorer.jpg",
+        altText: "ATS Resume Scorer",
+        imageClass: "portfolio-image",
+        githubLink: "https://github.com/avulaankith/ATS-Resume-Scorer",
+    },
+    {
         title: "Sparse Matrix Multiplication Implementations in Big Data Environments",
         description: [
             'Implemented matrix multiplication algorithms across multiple big data platforms, including Hadoop, Spark Scala, Pig, and Hive.',
