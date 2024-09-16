@@ -10,10 +10,10 @@ function SocialLinks() {
                     <img src="images/linkedin-favicon.ico" alt="LinkedIn" />
                     LinkedIn
                 </a>
-                <a href="https://leetcode.com/ankithavula" target="_blank" rel="noreferrer">
+                {/* <a href="https://leetcode.com/ankithavula" target="_blank" rel="noreferrer">
                     <img src="images/leetcode-favicon.ico" alt="LeetCode" />
                     LeetCode
-                </a>
+                </a> */}
                 <a href="https://github.com/avulaankith" target="_blank" rel="noreferrer">
                     <img src="images/github-favicon.ico" alt="GitHub" />
                     GitHub
