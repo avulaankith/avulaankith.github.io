@@ -1,6 +1,5 @@
-import { adjustSvgViewBox } from '../utils/portfolioScripts';
-import { useEffect } from 'react';
-
+import { adjustSvgViewBox } from "../utils/portfolioScripts";
+import { useEffect } from "react";
 
 function MyImage() {
   useEffect(() => {
@@ -43,9 +42,9 @@ function MyImage() {
           />
           <image
             className="newImage"
-            href="images/myphoto-nobg.png"
+            href="images/myphoto-nobg2.png"
             x={17}
-            y={13}
+            y={15}
             height="100%"
             width="100%"
           />
