@@ -53,6 +53,24 @@ function Experience() {
         </h4>
         <ul className="portfolio-li">
           <li>
+            Designed and deployed an interactive React.js dashboard for academic
+            data visualization, integrating REST APIs and Chart.js/Recharts to
+            provide real-time insights into student performance, research
+            publications, and funding trends for faculty and administrators.
+          </li>
+          <li>
+            Modernized a legacy PHP website into a responsive, high-performance
+            React.js application with Tailwind CSS and reusable components,
+            reducing page load time by 50% and improving SEO and content
+            management efficiency.
+          </li>
+          <li>
+            Built custom React Hooks and implemented a Storybook component
+            library, optimizing UI state management, real-time data filtering,
+            and accelerating future UI development by 30%, enhancing user
+            experience and developer productivity.
+          </li>
+          {/* <li>
             Implement basic linear algebra operations on Apache Spark using the
             DataFrames API, where block operations will run on NVIDIA GPUs using
             NVIDIA RAPIDS.
@@ -69,7 +87,7 @@ function Experience() {
           <li>
             Conducted study on Efficient Matrix Multiplication implementation
             using NVIDIA Rapids library in Spark, Pyspark and SparkSQL.
-          </li>
+          </li> */}
         </ul>
         {/* <p>Worked on developing and maintaining web applications using JavaScript and React.</p> */}
       </div>

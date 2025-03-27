@@ -167,7 +167,7 @@ body {
 
 .experience-image img {
   float: left;
-  height: 5.75cm;
+  height: 6cm;
   width: 6cm;
   margin: 2% 2% 1% 2%;
 }
@@ -485,7 +485,6 @@ footer {
   .portfolio-image,
   .portfolio-image2,
   .portfolio-image3 {
-
     /* Make images responsive */
     img {
       width: 100%;
@@ -544,7 +543,6 @@ footer {
     transform: translateX(0);
   }
 }
-
 
 @keyframes splashEffect {
   0% {
