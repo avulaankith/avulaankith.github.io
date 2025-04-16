@@ -53,22 +53,26 @@ function Experience() {
         </h4>
         <ul className="portfolio-li">
           <li>
-            Designed and deployed an interactive React.js dashboard for academic
-            data visualization, integrating REST APIs and Chart.js/Recharts to
-            provide real-time insights into student performance, research
-            publications, and funding trends for faculty and administrators.
+            Spearheaded the development of a sophisticated Retrieval-Augmented
+            Generation (RAG) system designed to enhance the search and retrieval
+            of complex college documentation, including academic records,
+            research publications, and administrative files with PostgreSQL and
+            API Gateway.
           </li>
           <li>
-            Modernized a legacy PHP website into a responsive, high-performance
-            React.js application with Tailwind CSS and reusable components,
-            reducing page load time by 50% and improving SEO and content
-            management efficiency.
+            Integrated LangChain with multiple college databases and content
+            management systems, facilitating seamless and secure document access
+            for faculty, administrative staff, and students.
           </li>
           <li>
-            Built custom React Hooks and implemented a Storybook component
-            library, optimizing UI state management, real-time data filtering,
-            and accelerating future UI development by 30%, enhancing user
-            experience and developer productivity.
+            Implemented advanced natural language processing techniques to
+            improve semantic search capabilities, enabling more accurate and
+            context-aware document retrieval.
+          </li>
+          <li>
+            Optimized the RAG system by fine-tuning large language models and
+            embedding techniques, achieving a 40% reduction in document
+            retrieval time and a 35% increase in search relevance accuracy.
           </li>
           {/* <li>
             Implement basic linear algebra operations on Apache Spark using the
