@@ -37,6 +37,7 @@ function Project() {
 
   const addToRefs = (el) => {
     if (el && !revealsRef.current.includes(el)) {
+      el.style.transitionDelay = `${Math.min(revealsRef.current.length * 70, 350)}ms`;
       revealsRef.current.push(el);
     }
   };
@@ -47,7 +48,11 @@ function Project() {
       <h1 ref={addToRefs} className="reveal">Projects</h1>
 
       {projects.map((project, index) => (
-        <div key={index} ref={addToRefs} className="portfolio-item reveal">
+        <div
+          key={index}
+          ref={addToRefs}
+          className={`portfolio-item reveal${project.imageSrc ? "" : " no-image"}`}
+        >
           <ProjectItem
             key={index}
             title={project.title}

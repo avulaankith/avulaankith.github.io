@@ -136,6 +136,14 @@ const projects = [
         githubLink: "https://github.com/avulaankith/Blogging-Website",
     },
     {
+        title: "ATTENDANCE TRACKER WEB APPLICATION",
+        description: [
+            "Built a lightweight web app to track student attendance records with daily status updates, filtering, and history views.",
+            "Implemented CRUD workflows with role-based access for attendance entry and reporting.",
+            "Designed a clean dashboard-style interface for quick attendance marking and summary insights.",
+        ],
+    },
+    {
         title: "PREMIER LEAGUE RESULT PREDICTION",
         description: [
             'Predicted match results by taking the history of respective teams, the venue of the match, and the season of the IPL series with an accuracy of 99%.',

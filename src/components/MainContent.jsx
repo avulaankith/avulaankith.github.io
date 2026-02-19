@@ -12,8 +12,10 @@ function MainContent() {
     return (
         <main>
             <div className="body-container">
-                <MyImage />
-                <AboutMe />
+                <section className="hero-section">
+                    <AboutMe />
+                    <MyImage />
+                </section>
                 <Experience />
                 <Skills />
                 <Teaching />

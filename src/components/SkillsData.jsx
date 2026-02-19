@@ -1,52 +1,81 @@
-// skillsData.js
 const skills = [
-  [
-    { name: "Python", imageSrc: "images/python-logo.svg", altText: "Python" },
-    {
-      name: "PyTorch",
-      imageSrc: "images/pytorch-logo.svg",
-      altText: "PyTorch",
-    },
-    {
-      name: "Tensorflow",
-      imageSrc: "images/tensorflow-logo.svg",
-      altText: "Tensorflow",
-    },
-    { name: "MySQL", imageSrc: "images/mysql-logo.svg", altText: "MySQL" },
-    {
-      name: "Apache Spark",
-      imageSrc: "images/spark-logo.svg",
-      altText: "Apache Spark",
-    },
-    { name: "Hadoop", imageSrc: "images/hadoop-logo.svg", altText: "Hadoop" },
-    // ... more skills for the first row ...
-  ],
-  [
-    { name: "HTML", imageSrc: "images/html-logo.svg", altText: "HTML Logo" },
-    { name: "CSS", imageSrc: "images/css-logo.svg", altText: "CSS Logo" },
-    {
-      name: "JavaScript",
-      imageSrc: "images/javascript-logo.svg",
-      altText: "JS Logo",
-    },
-    { name: "React", imageSrc: "images/react-logo.svg", altText: "React Logo" },
-    { name: "Flask", imageSrc: "images/flask-logo.svg", altText: "Flask Logo" },
-    { name: "Git", imageSrc: "images/github-logo.svg", altText: "Git Logo" },
-    // ... more skills for the second row ...
-  ],
-  [
-    {
-      name: "AWS",
-      imageSrc: "images/aws-svgrepo-com.svg",
-      altText: "HTML Logo",
-    },
-    {
-      name: "Docker",
-      imageSrc: "images/docker-svgrepo-com.svg",
-      altText: "Docker Logo",
-    },
-  ],
-  // ... more rows as needed ...
+  {
+    title: "Core",
+    type: "core",
+    subtitle: "Languages, frameworks, and engineering foundations for product delivery.",
+    featured: ["Python", "C++", "React"],
+    skills: [
+      { name: "C", imageSrc: "images/c-logo.svg", altText: "C" },
+      { name: "C++", imageSrc: "images/cplusplus-logo.svg", altText: "C++" },
+      { name: "Python", imageSrc: "images/python-logo.svg", altText: "Python" },
+      { name: "Git", imageSrc: "images/github-logo.svg", altText: "GitHub" },
+      { name: "Docker", imageSrc: "images/docker-svgrepo-com.svg", altText: "Docker" },
+      { name: "Kubernetes", imageSrc: "images/kubernetes-logo.svg", altText: "Kubernetes" },
+      { name: "HTML", imageSrc: "images/html-logo.svg", altText: "HTML" },
+      { name: "CSS", imageSrc: "images/css-logo.svg", altText: "CSS" },
+      { name: "JavaScript", imageSrc: "images/javascript-logo.svg", altText: "JavaScript" },
+      { name: "React", imageSrc: "images/react-logo.svg", altText: "React" },
+      { name: "Flask", imageSrc: "images/flask-logo.svg", altText: "Flask" },
+    ],
+  },
+  {
+    title: "ML",
+    type: "core",
+    subtitle: "Modeling, experimentation, and deployment-oriented ML tooling.",
+    featured: ["PyTorch", "TensorFlow", "Scikit-learn"],
+    skills: [
+      { name: "PyTorch", imageSrc: "images/pytorch-logo.svg", altText: "PyTorch" },
+      { name: "TensorFlow", imageSrc: "images/tensorflow-logo.svg", altText: "TensorFlow" },
+      { name: "Scikit-learn", imageSrc: "images/scikitlearn-logo.svg", altText: "Scikit-learn" },
+      { name: "Keras", imageSrc: "images/keras-logo.svg", altText: "Keras" },
+      { name: "MLflow", imageSrc: "images/mlflow-logo.svg", altText: "MLflow" },
+      { name: "LangChain", imageSrc: "images/langchain-logo.svg", altText: "LangChain" },
+    ],
+  },
+  {
+    title: "Data",
+    type: "core",
+    subtitle: "Batch and analytics stack across storage, compute, and query layers.",
+    featured: ["Apache Spark", "Hadoop", "MySQL"],
+    skills: [
+      { name: "NumPy", imageSrc: "images/numpy-logo.svg", altText: "NumPy" },
+      { name: "Pandas", imageSrc: "images/pandas-logo.svg", altText: "Pandas" },
+      { name: "OpenCV", imageSrc: "images/opencv-logo.svg", altText: "OpenCV" },
+      { name: "Apache Spark", imageSrc: "images/spark-logo.svg", altText: "Apache Spark" },
+      { name: "Hadoop", imageSrc: "images/hadoop-logo.svg", altText: "Hadoop" },
+      { name: "MySQL", imageSrc: "images/mysql-logo.svg", altText: "MySQL" },
+      { name: "PostgreSQL", imageSrc: "images/postgresql-logo.svg", altText: "PostgreSQL" },
+      { name: "MongoDB", imageSrc: "images/mongodb-logo.svg", altText: "MongoDB" },
+    ],
+  },
+  {
+    title: "AWS",
+    type: "cloud",
+    subtitle: "Cloud services used for data pipelines, storage, and ML operations.",
+    featured: ["AWS S3", "AWS SageMaker", "AWS Lambda"],
+    skills: [
+      { name: "Amazon Web Services", imageSrc: "images/aws-svgrepo-com.svg", altText: "Amazon Web Services" },
+      { name: "AWS S3", imageSrc: "images/aws-s3-service.svg", altText: "Amazon S3" },
+      { name: "AWS SageMaker", imageSrc: "images/Sagemaker Brand Logo.jpg", altText: "AWS SageMaker" },
+      { name: "AWS Glue", imageSrc: "images/AWS Glue Icon.svg", altText: "AWS Glue" },
+      { name: "AWS Lambda", imageSrc: "images/AWS Lambda Icon.svg", altText: "AWS Lambda" },
+    ],
+  },
+  {
+    title: "Azure",
+    type: "cloud",
+    subtitle: "Enterprise data and app services for production delivery on Azure.",
+    featured: ["Azure Data Factory", "Azure Synapse", "ADLS Gen2"],
+    skills: [
+      { name: "Microsoft Azure", imageSrc: "images/azure-logo.svg", altText: "Microsoft Azure" },
+      { name: "Azure Synapse", imageSrc: "images/azure-synapse-service.svg", altText: "Azure Synapse Analytics" },
+      { name: "Azure Data Factory", imageSrc: "images/azure-data-factory-service.svg", altText: "Azure Data Factory" },
+      { name: "ADLS Gen2", imageSrc: "images/azure-storage-accounts-service.svg", altText: "Azure Data Lake Storage" },
+      { name: "Azure AI Foundry", imageSrc: "images/azure-ai-studio-service.svg", altText: "Azure AI Studio / Foundry" },
+      { name: "Azure Functions", imageSrc: "images/azure-function-apps-service.svg", altText: "Azure Function Apps" },
+      { name: "Azure Web Apps", imageSrc: "images/azure-app-services-service.svg", altText: "Azure App Services" },
+    ],
+  },
 ];
 
 export default skills;

@@ -4,7 +4,7 @@ import { useEffect } from "react";
 function MyImage() {
   useEffect(() => {
     adjustSvgViewBox();
-  });
+  }, []);
   return (
     <div className="myimage">
       <svg
