@@ -57,7 +57,7 @@ const skills = [
     featured: ["S3", "SageMaker", "Lambda", "Glue"],
     skills: [
       { name: "S3", imageSrc: "images/aws-s3-service.svg", altText: "Amazon S3" },
-      { name: "SageMaker", imageSrc: "images/Sagemaker Brand Logo.jpg", altText: "AWS SageMaker" },
+      { name: "SageMaker", imageSrc: "images/SageMaker Icon.svg", altText: "AWS SageMaker" },
       { name: "Glue", imageSrc: "images/AWS Glue Icon.svg", altText: "AWS Glue" },
       { name: "Lambda", imageSrc: "images/AWS Lambda Icon.svg", altText: "AWS Lambda" },
     ],
