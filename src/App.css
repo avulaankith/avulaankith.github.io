@@ -194,6 +194,30 @@ a {
   color: inherit;
 }
 
+.skip-link {
+  position: absolute;
+  top: -44px;
+  left: 12px;
+  z-index: 1000;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  text-decoration: none;
+  font-weight: 700;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--primary) 70%, white 30%);
+  outline-offset: 2px;
+}
+
 .topnav {
   position: sticky;
   top: 0;
@@ -212,17 +236,22 @@ a {
   animation: navEnter 0.45s ease-out both;
 }
 
-.topnav h4 {
+.topnav-brand {
+  appearance: none;
+  border: 0;
+  background: transparent;
   margin: 0 auto 0 0;
+  padding: 0;
   font-family: "Sora", sans-serif;
   font-size: 21px;
   font-weight: 700;
   color: var(--title-accent);
   cursor: pointer;
+  text-align: left;
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
-.topnav h4:hover {
+.topnav-brand:hover {
   transform: translateY(-1px);
   color: var(--title-accent-hover);
 }
@@ -251,19 +280,17 @@ a {
 
 .theme-toggle {
   border: 1px solid var(--link-hover-border);
-  background: var(--link-hover-bg);
+  background: color-mix(in srgb, var(--surface) 84%, transparent);
   color: var(--link-text);
   border-radius: 999px;
-  padding: 8px 12px;
-  font-family: inherit;
-  font-size: 13px;
-  font-weight: 700;
+  padding: 4px;
+  width: 56px;
+  height: 32px;
   cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
+  display: grid;
+  place-items: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease,
-    background-color 0.2s ease;
+    background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .theme-toggle:hover {
@@ -271,23 +298,66 @@ a {
   box-shadow: var(--toggle-shadow);
 }
 
-.theme-toggle-icon {
-  display: inline-flex;
-  width: 16px;
-  height: 16px;
-  align-items: center;
-  justify-content: center;
+.theme-toggle-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
   border-radius: 999px;
-  background: var(--social-icon-bg);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--btn-primary-grad-1) 32%, transparent) 0%, color-mix(in srgb, var(--btn-primary-grad-2) 32%, transparent) 100%);
+  border: 1px solid color-mix(in srgb, var(--btn-secondary-border) 62%, transparent);
 }
 
-.theme-toggle-icon svg {
-  width: 16px;
-  height: 16px;
+.theme-toggle-glyph {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  width: 14px;
+  height: 14px;
+  color: color-mix(in srgb, var(--text) 70%, var(--primary) 30%);
+  opacity: 0.74;
+  transition: opacity 0.2s ease, color 0.2s ease;
 }
 
-.theme-toggle-label {
-  line-height: 1;
+.theme-toggle-glyph svg {
+  width: 14px;
+  height: 14px;
+}
+
+.theme-toggle-glyph--sun {
+  left: 8px;
+}
+
+.theme-toggle-glyph--moon {
+  right: 8px;
+}
+
+.theme-toggle-thumb {
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  border-radius: 999px;
+  background: linear-gradient(145deg, var(--surface) 0%, var(--surface-soft) 100%);
+  border: 1px solid color-mix(in srgb, var(--border) 85%, transparent);
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.2);
+  transition: left 0.28s cubic-bezier(0.2, 0.8, 0.2, 1), background 0.2s ease;
+}
+
+.theme-toggle.is-dark .theme-toggle-thumb {
+  left: 29px;
+}
+
+.theme-toggle.is-light .theme-toggle-glyph--sun {
+  opacity: 1;
+  color: #0f766e;
+}
+
+.theme-toggle.is-dark .theme-toggle-glyph--moon {
+  opacity: 1;
+  color: #93c5fd;
 }
 
 .body-container {
@@ -724,6 +794,27 @@ a {
   border-bottom: 1px solid var(--link-primary-border);
 }
 
+.project-tech-stack {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 4px;
+  padding: 0;
+}
+
+.project-tech-chip {
+  border: 1px solid var(--skill-chip-border);
+  background: var(--skill-chip-bg);
+  color: var(--skill-chip-text);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 7px 10px;
+  white-space: nowrap;
+}
+
 .skills-section {
   padding: 24px;
   overflow: visible;
@@ -923,6 +1014,17 @@ footer {
   cursor: pointer;
   color: var(--footer-name);
   font-weight: 700;
+}
+
+.footer-name-button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--footer-name);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  padding: 0;
 }
 
 .social-links {
@@ -1159,19 +1261,20 @@ footer {
     justify-content: flex-start;
   }
 
-  .topnav h4 {
+  .topnav-brand {
     width: 100%;
     margin-bottom: 4px;
   }
 
   .topnav a,
   .theme-toggle {
-    padding: 7px 10px;
-    font-size: 12px;
+    padding: 4px;
   }
 
   .theme-toggle {
     margin-left: auto;
+    width: 52px;
+    height: 30px;
   }
 
   .about-me {

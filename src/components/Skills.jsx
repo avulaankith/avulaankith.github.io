@@ -65,8 +65,8 @@ function Skills() {
   };
 
   return (
-    <div ref={addToRefs} className="skills reveal">
-      <h1>Skills</h1>
+    <div ref={addToRefs} className="skills reveal" aria-labelledby="skills-heading">
+      <h1 id="skills-heading">Skills</h1>
       <div className="skills-section">
         {skills.map((group) => {
           const featuredSet = new Set(group.featured || []);

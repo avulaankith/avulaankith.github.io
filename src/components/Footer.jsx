@@ -13,7 +13,18 @@ function Footer() {
     return (
         <footer>
             <div className="footer-content">
-                <p>&copy; {new Date().getFullYear()} <span className="footer-name" onClick={handleHomeClick}>Ankith Reddy Avula</span>. All rights reserved.</p>
+                <p>
+                    &copy; {new Date().getFullYear()}{" "}
+                    <button
+                        type="button"
+                        className="footer-name-button"
+                        onClick={handleHomeClick}
+                        aria-label="Go to homepage"
+                    >
+                        Ankith Reddy Avula
+                    </button>
+                    . All rights reserved.
+                </p>
                 {location.pathname === '/projects' && <SocialLinks />}
             </div>
         </footer>

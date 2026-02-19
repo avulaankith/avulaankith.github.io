@@ -40,8 +40,8 @@ function Experience() {
   };
 
   return (
-    <div className="experience">
-      <h1 ref={addToRefs} className="reveal">
+    <div className="experience" aria-labelledby="experience-heading">
+      <h1 id="experience-heading" ref={addToRefs} className="reveal">
         Experience
       </h1>
       <div ref={addToRefs} className="experience-item reveal">
@@ -223,6 +223,16 @@ function Experience() {
             Impact: Developed a real-time emotion recognition prototype with
             CNNs and improved class balance robustness.
           </p>
+          <div className="company-links">
+            <a
+              className="company-link company-link--work"
+              href="https://www.linkedin.com/company/ismrititek/?originalSubdomain=in"
+              target="_blank"
+              rel="noreferrer"
+            >
+              ismrititek
+            </a>
+          </div>
           <ul className="portfolio-li">
             <li>
               Developed a real-time facial emotion recognition system that

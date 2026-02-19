@@ -52,8 +52,8 @@ function Project() {
 
 
   return (
-    <div className="portfolio">
-      <h1 ref={addToRefs} className="reveal">Projects</h1>
+    <div className="portfolio" aria-labelledby="projects-heading">
+      <h1 id="projects-heading" ref={addToRefs} className="reveal">Projects</h1>
       <div ref={addToRefs} className="featured-work reveal">
         <div className="featured-work-header">
           <h2>Featured Work</h2>
@@ -96,6 +96,7 @@ function Project() {
             altText={project.altText}
             githubLink={project.githubLink}
             imageClass={project.imageClass}
+            techStack={project.techStack}
           />
         </div>
       ))}

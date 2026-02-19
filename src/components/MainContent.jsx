@@ -10,7 +10,7 @@ import Education from './Education';
 
 function MainContent() {
     return (
-        <main>
+        <main id="main-content" tabIndex="-1">
             <div className="body-container">
                 <section className="hero-section">
                     <AboutMe />

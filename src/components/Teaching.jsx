@@ -39,8 +39,8 @@ function Teaching() {
     }
   };
   return (
-    <div className="teaching">
-      <h1 ref={addToRefs} className="reveal">
+    <div className="teaching" aria-labelledby="teaching-heading">
+      <h1 id="teaching-heading" ref={addToRefs} className="reveal">
         Teaching
       </h1>
       <div ref={addToRefs} className="teaching-item reveal">
