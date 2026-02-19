@@ -81,7 +81,14 @@ function Skills() {
             >
               <header className="skills-group-header">
                 <h2>
-                  {group.type === "cloud" ? (
+                  {group.type === "cloud" && group.iconSrc ? (
+                    <span
+                      className={`cloud-chip ${group.title === "AWS" ? "cloud-chip--aws" : ""}`}
+                      aria-hidden="true"
+                    >
+                      <img src={group.iconSrc} alt={group.iconAlt || group.title} />
+                    </span>
+                  ) : group.type === "cloud" ? (
                     <span className="cloud-chip" aria-hidden="true">
                       <svg viewBox="0 0 24 24" fill="none">
                         <path

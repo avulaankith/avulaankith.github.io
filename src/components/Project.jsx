@@ -3,9 +3,17 @@ import ProjectItem from './ProjectItem';
 import '../App.css';
 import projects from './ProjectsData';
 
-
 function Project() {
   const revealsRef = useRef([]);
+  const featuredWorkTitles = [
+    "TWITTER SENTIMENT ANALYSIS",
+    "HIGHWAY LANE SEGMENTATION",
+    "MULTI-LABEL CLASSIFICATION FOR LAND COVER DETECTION",
+    "ATS Resume Scorer",
+  ];
+  const featuredWork = featuredWorkTitles
+    .map((title) => projects.find((project) => project.title === title))
+    .filter(Boolean);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -46,6 +54,33 @@ function Project() {
   return (
     <div className="portfolio">
       <h1 ref={addToRefs} className="reveal">Projects</h1>
+      <div ref={addToRefs} className="featured-work reveal">
+        <div className="featured-work-header">
+          <h2>Featured Work</h2>
+          <p>Selected projects with practical data + ML impact.</p>
+        </div>
+        <div className="featured-work-grid">
+          {featuredWork.map((project) => (
+            project.githubLink ? (
+              <a
+                key={project.title}
+                className="featured-work-tile"
+                href={project.githubLink}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>{project.title}</span>
+                <small>Open Repo ↗</small>
+              </a>
+            ) : (
+              <div key={project.title} className="featured-work-tile is-static">
+                <span>{project.title}</span>
+                <small>Project summary available</small>
+              </div>
+            )
+          ))}
+        </div>
+      </div>
 
       {projects.map((project, index) => (
         <div

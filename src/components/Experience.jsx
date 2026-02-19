@@ -53,6 +53,10 @@ function Experience() {
           <h4>
             August IT | <em>April 2025 - Present</em>
           </h4>
+          <p className="experience-impact">
+            Impact: Built and productionized cloud-first data workflows and ML
+            integrations for client delivery.
+          </p>
           <div className="company-links">
             <a
               className="company-link company-link--work"
@@ -77,6 +81,10 @@ function Experience() {
           <h4>
             Astrosoft Technologies | <em>January 2025 - April 2025</em>
           </h4>
+          <p className="experience-impact">
+            Impact: Delivered scalable ingestion and transformation pipelines to
+            improve analytics readiness and reporting speed.
+          </p>
           <div className="company-links">
             <a
               className="company-link company-link--work"
@@ -100,6 +108,10 @@ function Experience() {
             University of Texas Arlington |{" "}
             <em>September 2024 - January 2025</em>
           </h4>
+          <p className="experience-impact">
+            Impact: Reduced retrieval time by 40% and improved search relevance
+            by 35% for a campus-scale RAG system.
+          </p>
           <div className="company-links">
             <a
               className="company-link company-link--work"
@@ -164,6 +176,10 @@ function Experience() {
           <h4>
             Samsung PRISM | <em>May 2021 - November 2021</em>
           </h4>
+          <p className="experience-impact">
+            Impact: Built an end-to-end source separation pipeline for cleaner
+            multi-track audio decomposition.
+          </p>
           <div className="company-links">
             <a
               className="company-link company-link--work"
@@ -203,16 +219,10 @@ function Experience() {
           <h4>
             Ismriti - IIT Kanpur | <em>June 2019 - July 2019</em>
           </h4>
-          <div className="company-links">
-            <a
-              className="company-link company-link--work"
-              href="https://www.linkedin.com/company/ismrititek/?originalSubdomain=in"
-              target="_blank"
-              rel="noreferrer"
-            >
-              linkedin.com/company/ismrititek
-            </a>
-          </div>
+          <p className="experience-impact">
+            Impact: Developed a real-time emotion recognition prototype with
+            CNNs and improved class balance robustness.
+          </p>
           <ul className="portfolio-li">
             <li>
               Developed a real-time facial emotion recognition system that
