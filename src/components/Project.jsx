@@ -57,7 +57,7 @@ function Project() {
       <div ref={addToRefs} className="featured-work reveal">
         <div className="featured-work-header">
           <h2>Featured Work</h2>
-          <p>Selected projects with practical data + ML impact.</p>
+          <p>Selected projects with practical ML impact and data engineering depth.</p>
         </div>
         <div className="featured-work-grid">
           {featuredWork.map((project) => (

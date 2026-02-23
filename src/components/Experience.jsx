@@ -49,14 +49,10 @@ function Experience() {
           <img src="images/August IT Logo.webp" alt="August IT" />
         </div>
         <div className="experience-content">
-          <h3>Software Engineer - Data</h3>
+          <h3>ML Engineer</h3>
           <h4>
             August IT | <em>April 2025 - Present</em>
           </h4>
-          <p className="experience-impact">
-            Impact: Built and productionized cloud-first data workflows and ML
-            integrations for client delivery.
-          </p>
           <div className="company-links">
             <a
               className="company-link company-link--work"
@@ -77,14 +73,10 @@ function Experience() {
           />
         </div>
         <div className="experience-content">
-          <h3>Software Engineer - Data</h3>
+          <h3>ML Engineer</h3>
           <h4>
             Astrosoft Technologies | <em>January 2025 - April 2025</em>
           </h4>
-          <p className="experience-impact">
-            Impact: Delivered scalable ingestion and transformation pipelines to
-            improve analytics readiness and reporting speed.
-          </p>
           <div className="company-links">
             <a
               className="company-link company-link--work"

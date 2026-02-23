@@ -4,19 +4,21 @@ function AboutMe() {
   return (
     <div className="about-me">
       <p className="eyebrow">Portfolio</p>
-      <h1 id="hello">Building Data-Driven Systems That Ship</h1>
+      <h1 id="hello">Building Production ML Systems</h1>
       <h3 id="hello2">Hi, I'm Ankith Reddy Avula</h3>
       <p>
-        I am a Software Engineer focused on Data Engineering and applied
-        Machine Learning, with hands-on experience building production systems
-        across cloud platforms. I enjoy turning complex data problems into
-        reliable, scalable solutions that improve business outcomes.
+        I am an ML Engineer with hands-on experience building production
+        systems across cloud platforms. I also have strong Data Engineering
+        expertise in pipelines, orchestration, and scalable data platforms. I
+        enjoy turning complex data problems into reliable, scalable solutions
+        that improve business outcomes.
       </p>
       <p>
         I hold an M.S. in Computer Science from the University of Texas at
         Arlington (GPA 4.0) and have worked across research and industry roles,
         including August IT, Astrosoft Technologies, and UTA. My experience
-        spans end-to-end data + ML development: data ingestion, pipeline
+        spans end-to-end ML-focused development with strong data engineering:
+        data ingestion, pipeline
         orchestration, model integration, semantic search/RAG systems, and
         production deployment.
       </p>
