@@ -1,0 +1,3 @@
+Built-in image_gen edit, transparent_background: true. Input: previous transparent portrait cutout.
+
+Crop this existing transparent portrait to a tighter waist-up portrait. This is strictly a crop/reframe: preserve the exact face, hair, expression, skin, hoodie, pose and lighting without redrawing or changing any feature. Keep head, shoulders, chest and upper torso; cut the bottom at the natural waist around the top edge of the hoodie kangaroo pocket, removing the pocket and lower torso. Trim surplus transparent side margins, retain all hair and both shoulders with a small margin. Preserve genuine transparent alpha background. Do not add any body parts, text, background or effects.
