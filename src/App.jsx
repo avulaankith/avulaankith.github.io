@@ -1,18 +1,33 @@
-import "./App.css";
+import { HashRouter, Link, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Projects from "./pages/Projects";
+import ProjectDetail from "./pages/ProjectDetail";
+import { projects } from "./content/portfolio";
+import "./App.css";
 
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+function NotFound() {
+  return (
+    <main className="not-found">
+      <p className="eyebrow">404 · Page not found</p>
+      <h1>That path doesn’t resolve.</h1>
+      <Link className="button button--primary" to="/">
+        Back to home
+      </Link>
+    </main>
+  );
+}
 
 function App() {
-
   return (
-    <Router>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route
+          path="/work/:slug"
+          element={<ProjectDetail projects={projects} />}
+        />
+        <Route path="*" element={<NotFound />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 

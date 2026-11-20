@@ -1,5 +1,6 @@
 import { useRef, useEffect } from "react";
 import "../App.css";
+import { experience } from "../content/portfolio";
 
 function Experience() {
   const revealsRef = useRef([]);
@@ -49,10 +50,16 @@ function Experience() {
           <img src="images/August IT Logo.webp" alt="August IT" />
         </div>
         <div className="experience-content">
-          <h3>ML Engineer</h3>
+          <h3>{experience[0].role}</h3>
           <h4>
             August IT | <em>April 2025 - Present</em>
           </h4>
+          <ul className="portfolio-li">
+            {experience[0].bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}
+          </ul>
+          <div className="tag-list" aria-label="August IT technologies">
+            {experience[0].technologies.map((technology) => <span className="tag" key={technology}>{technology}</span>)}
+          </div>
           <div className="company-links">
             <a
               className="company-link company-link--work"
@@ -73,10 +80,16 @@ function Experience() {
           />
         </div>
         <div className="experience-content">
-          <h3>ML Engineer</h3>
+          <h3>{experience[1].role}</h3>
           <h4>
             Astrosoft Technologies | <em>January 2025 - April 2025</em>
           </h4>
+          <ul className="portfolio-li">
+            {experience[1].bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}
+          </ul>
+          <div className="tag-list" aria-label="Astrosoft Technologies technologies">
+            {experience[1].technologies.map((technology) => <span className="tag" key={technology}>{technology}</span>)}
+          </div>
           <div className="company-links">
             <a
               className="company-link company-link--work"
@@ -95,15 +108,10 @@ function Experience() {
           <img src="images/cseuta_logo.jpeg" alt="UTA" />
         </div>
         <div className="experience-content">
-          <h3>Research Assistant</h3>
+          <h3>{experience[2].role}</h3>
           <h4>
-            University of Texas Arlington |{" "}
-            <em>September 2024 - January 2025</em>
+            {experience[2].company} | <em>{experience[2].dates}</em>
           </h4>
-          <p className="experience-impact">
-            Impact: Reduced retrieval time by 40% and improved search relevance
-            by 35% for a campus-scale RAG system.
-          </p>
           <div className="company-links">
             <a
               className="company-link company-link--work"
@@ -115,47 +123,11 @@ function Experience() {
             </a>
           </div>
           <ul className="portfolio-li">
-            <li>
-              Spearheaded the development of a sophisticated Retrieval-Augmented
-              Generation (RAG) system designed to enhance the search and
-              retrieval of complex college documentation, including academic
-              records, research publications, and administrative files with
-              PostgreSQL and API Gateway.
-            </li>
-            <li>
-              Integrated LangChain with multiple college databases and content
-              management systems, facilitating seamless and secure document
-              access for faculty, administrative staff, and students.
-            </li>
-            <li>
-              Implemented advanced natural language processing techniques to
-              improve semantic search capabilities, enabling more accurate and
-              context-aware document retrieval.
-            </li>
-            <li>
-              Optimized the RAG system by fine-tuning large language models and
-              embedding techniques, achieving a 40% reduction in document
-              retrieval time and a 35% increase in search relevance accuracy.
-            </li>
-            {/* <li>
-              Implement basic linear algebra operations on Apache Spark using the
-              DataFrames API, where block operations will run on NVIDIA GPUs using
-              NVIDIA RAPIDS.
-            </li>
-            <li>
-              Implement the same linear algebra operations to run on NVIDIA GPUs
-              without using NVIDIA RAPIDS, with block operations hand-written in
-              C++.
-            </li>
-            <li>
-              Compare the performance of these implementations with existing ones
-              written using the Spark Core API and DataFrames.
-            </li>
-            <li>
-              Conducted study on Efficient Matrix Multiplication implementation
-              using NVIDIA Rapids library in Spark, Pyspark and SparkSQL.
-            </li> */}
+            {experience[2].bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}
           </ul>
+          <div className="tag-list" aria-label={`${experience[2].company} technologies`}>
+            {experience[2].technologies.map((technology) => <span className="tag" key={technology}>{technology}</span>)}
+          </div>
         </div>
         {/* <p>Worked on developing and maintaining web applications using JavaScript and React.</p> */}
       </div>
@@ -164,14 +136,10 @@ function Experience() {
           <img src="images/Samsung-Logo728_410.jpg" alt="Samsung" />
         </div>
         <div className="experience-content">
-          <h3>Research Intern</h3>
+          <h3>{experience[3].role}</h3>
           <h4>
-            Samsung PRISM | <em>May 2021 - November 2021</em>
+            {experience[3].company} | <em>{experience[3].dates}</em>
           </h4>
-          <p className="experience-impact">
-            Impact: Built an end-to-end source separation pipeline for cleaner
-            multi-track audio decomposition.
-          </p>
           <div className="company-links">
             <a
               className="company-link company-link--work"
@@ -183,22 +151,11 @@ function Experience() {
             </a>
           </div>
           <ul className="portfolio-li">
-            <li>
-              Developed an audio source separation model to isolate sound
-              categories (vocals, music, drums, etc) from mixed audio tracks
-              using Python, TensorFlow, UNets, Auto-Encoders, and Librosa
-            </li>
-            <li>
-              Implemented Fourier Transforms to convert audio signals into
-              spectrograms for frequency domain analysis and custom UNet-based
-              extraction.
-            </li>
-            <li>
-              Optimized model architecture, hyperparameters, and performance,
-              achieving accurate separation of sound sources across diverse
-              audio inputs.
-            </li>
+            {experience[3].bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}
           </ul>
+          <div className="tag-list" aria-label={`${experience[3].company} technologies`}>
+            {experience[3].technologies.map((technology) => <span className="tag" key={technology}>{technology}</span>)}
+          </div>
         </div>
         {/* <p>Worked on developing and maintaining web applications using JavaScript and React.</p> */}
       </div>

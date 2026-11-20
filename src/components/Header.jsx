@@ -55,7 +55,7 @@ function Header() {
                     Ankith Reddy Avula
                 </button>
                 <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink>
-                <a href="images/Ankith%20Reddy%20Avula.pdf" target="_blank" rel="noreferrer">Resume</a>
+                <a href="/Ankith-Reddy-Avula-Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
                 <NavLink to="/projects" className={({ isActive }) => isActive ? "active" : ""}>Projects</NavLink>
                 <button
                     className={`theme-toggle ${theme === 'dark' ? 'is-dark' : 'is-light'}`}

@@ -5,7 +5,7 @@ function AboutMe() {
     <div className="about-me">
       <p className="eyebrow">Portfolio</p>
       <h1 id="hello">Building Production ML Systems</h1>
-      <h3 id="hello2">Hi, I'm Ankith Reddy Avula</h3>
+      <h3 id="hello2">Hi, I&apos;m Ankith Reddy Avula</h3>
       <p>
         I am an ML Engineer with hands-on experience building production
         systems across cloud platforms. I also have strong Data Engineering
@@ -31,7 +31,7 @@ function AboutMe() {
         into high-impact Data Engineering and ML platform roles.
       </p>
       <div className="about-actions">
-        <a href="images/Ankith%20Reddy%20Avula.pdf" target="_blank" rel="noreferrer">
+        <a href="/Ankith-Reddy-Avula-Resume.pdf" target="_blank" rel="noreferrer">
           View Resume
         </a>
         <Link to="/projects">Explore Projects</Link>
