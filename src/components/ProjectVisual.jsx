@@ -1,6 +1,28 @@
 function ProjectVisual({ project }) {
   const slug = project.slug;
 
+  if (slug === "samsung-audio-source-separation") {
+    return (
+      <div
+        className="project-visual project-visual--agent"
+        role="img"
+        aria-label="Mixed audio is processed as spectrograms by a U-Net model to separate vocals, music, and percussion"
+      >
+        <div className="agent-query">Mixed audio → Spectrograms</div>
+        <div className="agent-validator">
+          <span className="validator-check">♪</span>
+          <span><strong>U-Net source separation</strong><small>TensorFlow · Librosa · GPU inference</small></span>
+        </div>
+        <div className="agent-branches">
+          {["VOCALS", "MUSIC", "PERCUSSION"].map((source) => (
+            <div className="agent-branch" key={source}><span>{source}</span><i /></div>
+          ))}
+        </div>
+        <div className="agent-execution">MODEL EVALUATION <span>♪</span></div>
+      </div>
+    );
+  }
+
   if (slug === "financial-data-platform") {
     return (
       <div
@@ -145,6 +167,40 @@ function ProjectVisual({ project }) {
           <div className="matrix-grid">
             <i>TP</i><i>FP</i><i>FN</i><i>TN</i>
           </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (slug === "enterprise-knowledge-graph" || slug === "secure-enterprise-agent-tools") {
+    const isGraph = slug === "enterprise-knowledge-graph";
+    const branches = isGraph
+      ? ["BUSINESS TERMS", "SCHEMAS", "RELATIONSHIPS"]
+      : ["DATA TOOLS", "SEARCH TOOLS", "REPORTING"];
+
+    return (
+      <div
+        className="project-visual project-visual--agent"
+        role="img"
+        aria-label={isGraph
+          ? "Business terms, schemas, and relationships form a knowledge graph for grounded query planning"
+          : "Enterprise agents access data, search, and reporting through controlled MCP tools and service authorization"}
+      >
+        <div className="agent-query">{isGraph ? "Enterprise metadata" : "Enterprise agent"}</div>
+        <div className="agent-branches">
+          {branches.map((branch) => (
+            <div className="agent-branch" key={branch}><span>{branch}</span><i /></div>
+          ))}
+        </div>
+        <div className="agent-validator">
+          <span className="validator-check">✓</span>
+          <span>
+            <strong>{isGraph ? "Knowledge graph" : "Controlled MCP interfaces"}</strong>
+            <small>{isGraph ? "definitions · lineage · semantic mappings" : "Managed Identity · RBAC · Key Vault"}</small>
+          </span>
+        </div>
+        <div className="agent-execution">
+          {isGraph ? "GROUNDED QUERY PLANNING" : "AUTHORIZED SERVICE ACCESS"}<span>↗</span>
         </div>
       </div>
     );

@@ -11,7 +11,7 @@ export const profile = {
 };
 
 const professionalStatus =
-  "Professional work · sanitized case study · deployment details require confirmation";
+  "August IT · Professional work · sanitized case study · deployment details require confirmation";
 
 export const projects = [
   {
@@ -20,7 +20,7 @@ export const projects = [
     category: "Software Engineering",
     kind: "Professional experience",
     status: professionalStatus,
-    cardStatus: "Professional · sanitized",
+    cardStatus: "August IT · sanitized",
     summary:
       "A cloud lakehouse approach for consistent, incremental financial data processing across isolated environments.",
     description:
@@ -76,7 +76,7 @@ export const projects = [
     category: "AI / ML Engineering",
     kind: "Professional experience",
     status: professionalStatus,
-    cardStatus: "Professional · sanitized",
+    cardStatus: "August IT · sanitized",
     summary:
       "Retrieval and grounded question-answering patterns for long, complex documents where evidence matters.",
     description:
@@ -132,8 +132,8 @@ export const projects = [
     category: "Software Engineering",
     kind: "Professional experience",
     status:
-      "Professional experience · architecture summarized from resume · app specifics require confirmation",
-    cardStatus: "Professional · summary from resume",
+      "August IT · architecture summarized from resume · app specifics require confirmation",
+    cardStatus: "August IT · summary from resume",
     summary:
       "A clear separation between user experience, APIs, cloud services, and governed data access.",
     description:
@@ -187,8 +187,8 @@ export const projects = [
     category: "Software Engineering",
     kind: "Professional experience",
     status:
-      "Architecture case study · implementation and deployment status need confirmation",
-    cardStatus: "Architecture · status to confirm",
+      "August IT · Architecture case study · implementation and deployment status need confirmation",
+    cardStatus: "August IT · Architecture · status to confirm",
     summary:
       "A defensive event-processing pattern for file workflows with duplicate delivery, retries, and quarantine paths.",
     description:
@@ -243,8 +243,8 @@ export const projects = [
     category: "AI / ML Engineering",
     kind: "Professional experience",
     status:
-      "Resume-backed ML work · interactive threshold illustration uses synthetic data",
-    cardStatus: "ML evaluation · synthetic demo",
+      "August IT · ML evaluation · interactive threshold illustration uses synthetic data",
+    cardStatus: "August IT · ML evaluation · synthetic demo",
     summary:
       "A classification workflow that makes the precision–recall trade-off visible instead of hiding it behind one accuracy number.",
     description:
@@ -374,8 +374,8 @@ export const projects = [
     title: "Designing Secure Enterprise Document Access",
     category: "Software Engineering",
     kind: "Architecture exploration",
-    status: "Architecture discussion · identity integration and deployment need confirmation",
-    cardStatus: "Exploration · status to confirm",
+    status: "August IT · Architecture discussion · identity integration and deployment need confirmation",
+    cardStatus: "August IT · Exploration · status to confirm",
     summary:
       "A document-delivery design that performs authorization at the service boundary rather than trusting a shared link.",
     description:
@@ -423,6 +423,201 @@ export const projects = [
     ],
     mode: ["software"],
   },
+  {
+    "slug": "enterprise-knowledge-graph",
+    "title": "Connecting Enterprise Data with a Knowledge Graph",
+    "category": "AI / ML Engineering",
+    "kind": "Professional experience",
+    "status": "August IT · Resume-backed professional work",
+    "cardStatus": "August IT · Professional case study",
+    "summary": "I designed a knowledge graph and semantic layer across approximately 5,000 lakehouse tables to ground AI agents in business meaning.",
+    "description": "I designed a knowledge graph and semantic layer across approximately 5,000 lakehouse tables to ground AI agents in business meaning.",
+    "contribution": "At August IT, I designed a metadata-driven knowledge graph representing datasets, columns, business concepts, domains, entities, and relationships. I connected business definitions, taxonomies, metrics, and lineage to physical datasets and Microsoft Fabric SQL views.",
+    "requirements": "Help agents discover relevant datasets, resolve ambiguous business terms, and infer joins before generating analytical SQL.",
+    "tradeoffs": "A semantic layer improves query planning only when its definitions and relationships stay aligned with the underlying datasets. Broad metadata coverage must be balanced with the relevance of the context supplied to an agent.",
+    "lessons": "Business definitions and physical schemas need explicit mappings for an agent to answer the intended question.",
+    "tags": [
+      "Knowledge graph",
+      "Semantic layer",
+      "Metadata",
+      "LLM grounding"
+    ],
+    "stack": [
+      "Python",
+      "ADLS Gen2",
+      "Delta Lake",
+      "Microsoft Fabric",
+      "Azure AI Foundry"
+    ],
+    "flow": [
+      [
+        "Metadata",
+        "Schemas, columns, and lineage"
+      ],
+      [
+        "Business meaning",
+        "Definitions, metrics, and domains"
+      ],
+      [
+        "Knowledge graph",
+        "Entities and dataset relationships"
+      ],
+      [
+        "Agent context",
+        "Dataset discovery and join planning"
+      ]
+    ],
+    "sections": [
+      {
+        "heading": "The engineering problem",
+        "body": "An enterprise lakehouse spans thousands of tables. Schema names alone do not explain business metrics or which datasets belong together."
+      },
+      {
+        "heading": "Semantic mappings",
+        "body": "I designed mappings across ADLS Delta Lake datasets, Microsoft Fabric SQL views, enterprise metadata, and knowledge graph entities to support grounded analytical queries."
+      },
+      {
+        "heading": "Scope",
+        "body": "The resume describes a lakehouse containing approximately 5,000 tables. This is the metadata scope, rather than a query-accuracy or performance measure."
+      }
+    ],
+    "mode": [
+      "software",
+      "ai"
+    ]
+  },
+  {
+    "slug": "secure-enterprise-agent-tools",
+    "title": "Building Secure MCP Tools for Enterprise Agents",
+    "category": "AI / ML Engineering",
+    "kind": "Professional experience",
+    "status": "August IT · Resume-backed professional work",
+    "cardStatus": "August IT · Professional case study",
+    "summary": "I designed reusable MCP and tool-calling interfaces for controlled access to enterprise data, search, and reporting services.",
+    "description": "I designed reusable MCP and tool-calling interfaces for controlled access to enterprise data, search, and reporting services.",
+    "contribution": "At August IT, I designed MCP interfaces for Azure AI Foundry agents to access ADLS, SQL analytics endpoints, Azure AI Search, knowledge graph services, and reporting systems. I engineered service integrations using Microsoft Entra ID, Managed Identity, RBAC, and Key Vault.",
+    "requirements": "Give agents reusable access to enterprise services through controlled tools and authenticated service-to-service integrations.",
+    "tradeoffs": "Reusable tools simplify agent workflows, but each interface needs clear permissions and a well-defined scope. Authorization must be enforced by the service handling the request.",
+    "lessons": "Tool availability and permission to access a resource are separate concerns; secure integration requires both.",
+    "tags": [
+      "MCP",
+      "Tool calling",
+      "Managed Identity",
+      "RBAC"
+    ],
+    "stack": [
+      "Python",
+      "Azure AI Foundry",
+      "MCP",
+      "Microsoft Entra ID",
+      "Key Vault",
+      "Azure DevOps",
+      "Docker"
+    ],
+    "flow": [
+      [
+        "Agent",
+        "Select a task-specific tool"
+      ],
+      [
+        "Tool interface",
+        "Reusable MCP and service contracts"
+      ],
+      [
+        "Identity",
+        "Managed Identity and RBAC"
+      ],
+      [
+        "Enterprise services",
+        "Data, search, knowledge graph, reporting"
+      ]
+    ],
+    "sections": [
+      {
+        "heading": "The engineering problem",
+        "body": "Agents need access to multiple enterprise systems while preserving the access controls of each service."
+      },
+      {
+        "heading": "Controlled integrations",
+        "body": "I designed reusable tools spanning storage, SQL analytics, search, knowledge graph services, and reporting, backed by secure service-to-service integrations."
+      },
+      {
+        "heading": "Deployment workflow",
+        "body": "I automated unit-tested deployments across environments using Azure DevOps CI/CD, Docker, and Git."
+      }
+    ],
+    "mode": [
+      "software",
+      "ai"
+    ]
+  },
+  {
+    "slug": "samsung-audio-source-separation",
+    "title": "Separating Audio Sources with Deep Learning",
+    "category": "AI / ML Engineering",
+    "kind": "Professional experience",
+    "status": "Samsung · Software Engineer Intern · May–November 2021",
+    "cardStatus": "Samsung · Audio ML & GPU inference",
+    "summary": "I developed an audio source-separation system to isolate vocals, music, and percussion from mixed audio using TensorFlow, U-Net, and spectrogram-based processing.",
+    "description": "During my software engineering internship at Samsung, I worked on audio preprocessing, model evaluation, and GPU inference optimization for source separation.",
+    "requirements": "Separate overlapping sources in mixed audio and evaluate model architectures across diverse samples using consistent preprocessing and frequency-domain features.",
+    "contribution": "I developed the source-separation system with TensorFlow, U-Net architectures, and Librosa. I built preprocessing and frequency-domain feature pipelines, evaluated architectures on mixed-audio samples, and optimized low-level kernels for GPU inference throughput.",
+    "tradeoffs": "Spectrogram-based modeling makes frequency structure available to the network, while preprocessing choices affect the detail represented in each example. Model quality and inference throughput need to be assessed together when comparing architectures.",
+    "lessons": "Audio preprocessing, model architecture, and inference performance are connected parts of the same system. Evaluating diverse mixtures helps reveal behavior that a single example cannot show.",
+    "tags": [
+      "Audio ML",
+      "U-Net",
+      "TensorFlow",
+      "GPU inference"
+    ],
+    "stack": [
+      "Python",
+      "TensorFlow",
+      "U-Net",
+      "Librosa",
+      "Spectrograms",
+      "GPU inference"
+    ],
+    "flow": [
+      [
+        "Mixed audio",
+        "Overlapping vocals, music, and percussion"
+      ],
+      [
+        "Preprocessing",
+        "Audio preparation and frequency-domain features"
+      ],
+      [
+        "Spectrograms",
+        "Time-frequency representations"
+      ],
+      [
+        "U-Net",
+        "Learned source separation"
+      ],
+      [
+        "Evaluation",
+        "Compare architectures and inference throughput"
+      ]
+    ],
+    "sections": [
+      {
+        "heading": "The engineering problem",
+        "body": "Mixed audio contains overlapping sources. A separation model must distinguish their time-frequency patterns across varied recordings."
+      },
+      {
+        "heading": "Preprocessing and modeling",
+        "body": "I built preprocessing and frequency-domain feature pipelines with Librosa and developed TensorFlow U-Net models for spectrogram-based source separation."
+      },
+      {
+        "heading": "Evaluation and inference",
+        "body": "I evaluated model architectures across diverse mixed-audio samples and optimized low-level kernels for GPU inference throughput. The resume does not report a numerical quality or throughput improvement."
+      }
+    ],
+    "mode": [
+      "ai"
+    ]
+  }
 ];
 
 export const publicProjects = [
@@ -530,12 +725,13 @@ export const experience = [
     company: "August IT",
     role: "Data and AI Software Engineer",
     dates: "April 2025 — Present",
-    note: "Enterprise data platforms and AI services",
+    note: "Supporting Farmer Mac · Enterprise data platforms and AI services",
     bullets: [
-      "Build and deploy Python AI services and REST APIs with Azure AI Foundry, Azure OpenAI, Azure AI Search, and LangChain for retrieval-augmented generation and financial analytics.",
+      "Build and deploy Python AI services and REST APIs with Azure AI Foundry, Azure OpenAI, Azure AI Search, and LangChain for retrieval-augmented generation and financial analytics, improving retrieval accuracy by 40% over baseline in offline evaluations.",
       "Architect multi-agent text-to-SQL workflows that separate planning, metadata and schema discovery, SQL generation, validation, governed execution, and response generation.",
-      "Design metadata-driven knowledge graphs, semantic mappings, and MCP tool interfaces to ground agents in business definitions, dataset relationships, and authorized enterprise data.",
-      "Optimize PySpark and Spark SQL pipelines across ADLS Gen2, Databricks, Delta Lake, Azure Data Factory, and Synapse using partitioning, broadcast joins, predicate pushdown, and Adaptive Query Execution.",
+      "Design a knowledge graph and semantic layer across approximately 5,000 lakehouse tables, connecting business definitions, dataset relationships, and lineage to ground agent query planning.",
+      "Optimize PySpark and Spark SQL pipelines across ADLS Gen2, Databricks, Delta Lake, Azure Data Factory, and Synapse using partitioning, broadcast joins, predicate pushdown, and Adaptive Query Execution, reducing end-to-end processing latency by 35% versus the prior implementation.",
+      "Design reusable MCP tools for controlled access to ADLS, SQL analytics, Azure AI Search, knowledge graph services, and reporting systems.",
       "Secure service integrations with Microsoft Entra ID, Managed Identity, RBAC, and Key Vault; automate tested deployments across environments with Azure DevOps, Docker, and Git.",
     ],
     technologies: ["Python", "REST APIs", "Azure AI Foundry", "Azure OpenAI", "Azure AI Search", "LangChain", "MCP", "PySpark / Spark SQL", "Databricks", "Delta Lake", "Microsoft Fabric", "Azure DevOps"],

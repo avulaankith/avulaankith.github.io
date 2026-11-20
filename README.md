@@ -25,13 +25,12 @@ There is no TypeScript configuration or automated test suite in this repository.
 
 ## Deployment
 
-The source repository is private. The public portfolio is hosted with Sites at
+The source repository is public. The public portfolio is hosted with Sites at
 https://ankith-reddy-avula.windyshortbread16.chatgpt.site/ .
 
 Site identity and the static build directory are tracked in `.openai/hosting.json`.
 Run `npm run build`, then use the Sites source workflow to commit/push the source,
-package `dist`, save the version, and deploy it. GitHub Pages is no longer used:
-the current GitHub plan does not support Pages from this private repository.
+package `dist`, save the version, and deploy it. Sites is the deployment target for this portfolio.
 
 ## Role-based project explorer
 

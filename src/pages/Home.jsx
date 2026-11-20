@@ -83,8 +83,8 @@ const roleEvidence = {
     skills: ["PyTorch", "TensorFlow", "Scikit-learn", "Model evaluation"],
     highlights: [
       {
-        key: "ml-decision-systems",
-        reason: "Model evaluation and decision-threshold tradeoffs.",
+        key: "samsung-audio-source-separation",
+        reason: "Audio preprocessing, U-Net model evaluation, and GPU inference optimization.",
       },
       {
         key: "Ocular Disease Detection",
@@ -468,7 +468,7 @@ function Home() {
           <SectionHeading
             eyebrow="Selected engineering work"
             title="Systems, not just demos."
-            description="Sanitized case studies spanning data platforms, full-stack systems, event-driven architecture, and applied AI. Professional work is kept separate from public repositories."
+            description="Selected work across August IT and Samsung, from enterprise data platforms and AI agents to audio machine learning. Explore the architecture, contributions, and engineering trade-offs behind each case study."
           />
           <div className="work-controls">
             <div className="mode-switch" role="group" aria-label="Filter work by discipline">
