@@ -11,7 +11,7 @@ export const profile = {
 };
 
 const professionalStatus =
-  "August IT · Professional work · sanitized case study · deployment details require confirmation";
+  "August IT · Professional case study";
 
 export const projects = [
   {
@@ -20,11 +20,11 @@ export const projects = [
     category: "Software Engineering",
     kind: "Professional experience",
     status: professionalStatus,
-    cardStatus: "August IT · sanitized",
+    cardStatus: "August IT · Professional case study",
     summary:
       "A cloud lakehouse approach for consistent, incremental financial data processing across isolated environments.",
     description:
-      "Resume-backed work at August IT, presented without customer data or internal implementation details.",
+      "Financial data platform engineering at August IT, spanning ingestion, transformation, and reliable downstream access.",
     requirements:
       "Support incremental changes and historical tracking across multiple data sources and DEV/UAT/PROD environments, while making validation and reruns predictable.",
     contribution:
@@ -76,11 +76,11 @@ export const projects = [
     category: "AI / ML Engineering",
     kind: "Professional experience",
     status: professionalStatus,
-    cardStatus: "August IT · sanitized",
+    cardStatus: "August IT · Professional case study",
     summary:
       "Retrieval and grounded question-answering patterns for long, complex documents where evidence matters.",
     description:
-      "A sanitized account of document ingestion, semantic retrieval, and grounded answers described in the latest resume.",
+      "Document ingestion, semantic retrieval, and grounded question answering for enterprise workflows.",
     requirements:
       "Retrieve relevant evidence from lengthy or scanned documents, preserve source context, and make extraction and retrieval failures visible to users.",
     contribution:
@@ -132,12 +132,12 @@ export const projects = [
     category: "Software Engineering",
     kind: "Professional experience",
     status:
-      "August IT · architecture summarized from resume · app specifics require confirmation",
-    cardStatus: "August IT · summary from resume",
+      "August IT · Application and service integration",
+    cardStatus: "August IT · Full-stack engineering",
     summary:
       "A clear separation between user experience, APIs, cloud services, and governed data access.",
     description:
-      "A generalized view of the Python services, serverless functions, and React integrations described in the resume.",
+      "Python services, serverless functions, and React interfaces for enterprise data and document workflows.",
     requirements:
       "Keep UI behavior, API contracts, service logic, and data access understandable as separate boundaries; validate and authorize requests at the service layer.",
     contribution:
@@ -187,8 +187,8 @@ export const projects = [
     category: "Software Engineering",
     kind: "Professional experience",
     status:
-      "August IT · Architecture case study · implementation and deployment status need confirmation",
-    cardStatus: "August IT · Architecture · status to confirm",
+      "August IT · Architecture case study",
+    cardStatus: "August IT · Event-driven architecture",
     summary:
       "A defensive event-processing pattern for file workflows with duplicate delivery, retries, and quarantine paths.",
     description:
@@ -374,8 +374,8 @@ export const projects = [
     title: "Designing Secure Enterprise Document Access",
     category: "Software Engineering",
     kind: "Architecture exploration",
-    status: "August IT · Architecture discussion · identity integration and deployment need confirmation",
-    cardStatus: "August IT · Exploration · status to confirm",
+    status: "August IT · Architecture exploration",
+    cardStatus: "August IT · Architecture exploration",
     summary:
       "A document-delivery design that performs authorization at the service boundary rather than trusting a shared link.",
     description:
@@ -428,7 +428,7 @@ export const projects = [
     "title": "Connecting Enterprise Data with a Knowledge Graph",
     "category": "AI / ML Engineering",
     "kind": "Professional experience",
-    "status": "August IT · Resume-backed professional work",
+    "status": "August IT · Professional case study",
     "cardStatus": "August IT · Professional case study",
     "summary": "I designed a knowledge graph and semantic layer across approximately 5,000 lakehouse tables to ground AI agents in business meaning.",
     "description": "I designed a knowledge graph and semantic layer across approximately 5,000 lakehouse tables to ground AI agents in business meaning.",
@@ -491,7 +491,7 @@ export const projects = [
     "title": "Building Secure MCP Tools for Enterprise Agents",
     "category": "AI / ML Engineering",
     "kind": "Professional experience",
-    "status": "August IT · Resume-backed professional work",
+    "status": "August IT · Professional case study",
     "cardStatus": "August IT · Professional case study",
     "summary": "I designed reusable MCP and tool-calling interfaces for controlled access to enterprise data, search, and reporting services.",
     "description": "I designed reusable MCP and tool-calling interfaces for controlled access to enterprise data, search, and reporting services.",

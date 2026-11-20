@@ -89,12 +89,12 @@ function ProjectDetail({ projects }) {
             <strong>{project.kind}</strong>
           </div>
           <div>
-            <span>Disclosure</span>
-            <strong>Sanitized summary</strong>
+            <span>Discipline</span>
+            <strong>{project.category}</strong>
           </div>
           <div>
-            <span>Evidence basis</span>
-            <strong>Resume / supplied project brief</strong>
+            <span>Focus</span>
+            <strong>{project.tags.slice(0, 2).join(" · ")}</strong>
           </div>
         </div>
 

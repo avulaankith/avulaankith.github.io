@@ -233,7 +233,7 @@ function ExperienceSection() {
       <SectionHeading
         eyebrow="Where I’ve worked"
         title="Experience built across systems and research"
-        description="A resume-backed timeline, with employer and client relationship stated explicitly."
+        description="Experience building software, data platforms, and applied AI systems."
       />
       <div className="timeline">
         {experience.map((item, index) => (
@@ -529,7 +529,7 @@ function Home() {
           <SectionHeading
             eyebrow="Technical toolkit"
             title="A practical, cross-stack foundation"
-            description="Technologies grounded in the latest resume and public project repositories."
+            description="Tools and technologies I use across professional work and independent projects."
           />
           <div className="expertise-grid">
             {skillGroups.map((group) => (
