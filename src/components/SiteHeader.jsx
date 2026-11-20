@@ -23,7 +23,7 @@ function SiteHeader() {
     <header className="site-header">
       <div className="nav-shell">
         <Link className="wordmark" to="/" aria-label="Ankith Reddy Avula home">
-          <span className="wordmark-mark">A</span>
+          <img className="wordmark-mark" src="/images/ankith-logo.svg" alt="" width="40" height="40" />
           <span>Ankith Reddy Avula</span>
         </Link>
         <button

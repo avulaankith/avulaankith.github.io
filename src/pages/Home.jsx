@@ -592,7 +592,7 @@ function Home() {
       </main>
       <footer className="site-footer">
         <Link className="wordmark" to="/">
-          <span className="wordmark-mark">A</span>
+          <img className="wordmark-mark" src="/images/ankith-logo.svg" alt="" width="40" height="40" />
           <span>Ankith Reddy Avula</span>
         </Link>
         <p>Software engineering · Applied AI · Herndon, Virginia</p>

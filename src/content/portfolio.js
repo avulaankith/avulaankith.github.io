@@ -723,7 +723,7 @@ export const publicProjects = [
 export const experience = [
   {
     company: "August IT",
-    role: "Data and AI Software Engineer",
+    role: "Software Engineer",
     dates: "April 2025 — Present",
     note: "Supporting Farmer Mac · Enterprise data platforms and AI services",
     bullets: [
@@ -739,7 +739,7 @@ export const experience = [
   },
   {
     company: "Astrosoft Technologies",
-    role: "Data and AI Software Engineer",
+    role: "Software Engineer",
     dates: "January 2025 — April 2025",
     note: "Computer vision and ML data pipelines",
     bullets: [
@@ -752,7 +752,7 @@ export const experience = [
   },
   {
     company: "University of Texas at Arlington",
-    role: "Software Engineer",
+    role: "Research Assistant",
     dates: "August 2023 — January 2025",
     note: "RAG applications and backend retrieval",
     bullets: [
