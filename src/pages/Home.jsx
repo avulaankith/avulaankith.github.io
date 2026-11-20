@@ -236,11 +236,10 @@ function ExperienceSection() {
         description="Experience building software, data platforms, and applied AI systems."
       />
       <div className="timeline">
-        {experience.map((item, index) => (
+        {experience.map((item) => (
           <article className="timeline-item" key={item.company}>
             <div className="timeline-marker">
-              {item.logo && <img src={item.logo} alt="" loading="lazy" />}
-              <span>{String(index + 1).padStart(2, "0")}</span>
+              {item.logo && <img src={item.logo} alt={`${item.company} logo`} loading="lazy" />}
             </div>
             <div className="timeline-card">
               <div className="timeline-heading">
@@ -554,13 +553,19 @@ function Home() {
           />
           <div className="education-grid">
             <article>
-              <span className="education-date">2022 — 2024</span>
+              <div className="education-card-heading">
+                <img className="education-logo" src="/images/orange-logo-on-blue.jpg" alt="University of Texas at Arlington logo" loading="lazy" />
+                <span className="education-date">2022 — 2024</span>
+              </div>
               <h3>M.S. Computer Science</h3>
               <p>University of Texas at Arlington</p>
               <span className="education-detail">GPA 4.0 / 4.0</span>
             </article>
             <article>
-              <span className="education-date">2018 — 2022</span>
+              <div className="education-card-heading">
+                <img className="education-logo" src="/images/Indian_Institute_of_Information_Technology_Design_and_Manufacturing_Kurnool_logo.png" alt="IIITDM Kurnool logo" loading="lazy" />
+                <span className="education-date">2018 — 2022</span>
+              </div>
               <h3>B.Tech. Computer Engineering</h3>
               <p>IIITDM Kurnool</p>
             </article>
