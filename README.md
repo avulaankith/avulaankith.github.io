@@ -25,12 +25,21 @@ There is no TypeScript configuration or automated test suite in this repository.
 
 ## Deployment
 
-The source repository is public. The public portfolio is hosted with Sites at
-https://ankith-reddy-avula.windyshortbread16.chatgpt.site/ .
+The source repository is public. The portfolio is published on GitHub Pages at
+https://avulaankith.github.io/ .
 
-Site identity and the static build directory are tracked in `.openai/hosting.json`.
-Run `npm run build`, then use the Sites source workflow to commit/push the source,
-package `dist`, save the version, and deploy it. Sites is the deployment target for this portfolio.
+From the `portfolio-redesign` branch, publish the current production build with:
+
+```sh
+npm run deploy:github
+```
+
+This builds Vite and publishes `dist/` to the `gh-pages` branch. GitHub Pages serves
+that branch from its root. Hash-based routes support direct case-study links.
+
+The separate Sites deployment remains configured in `.openai/hosting.json` at
+https://ankith-reddy-avula.windyshortbread16.chatgpt.site/ .
+Updating GitHub Pages does not update that separate deployment.
 
 ## Role-based project explorer
 
