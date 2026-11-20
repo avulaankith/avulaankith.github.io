@@ -43,7 +43,7 @@ Updating GitHub Pages does not update that separate deployment.
 
 ## Role-based project explorer
 
-“Explore my fit” highlights curated projects for six engineering roles, with a short explanation of their relevance. It does not accept job descriptions or calculate match scores. The former “Ask Ankith AI” interface has been removed.
+“Explore my fit” offers an overview and seven engineering role views, including data engineering. Each view includes a contribution summary, relevant skills, three linked work examples, a resume download, and a role-specific email contact link. Content is curated in `src/content/roleFit.js`; it does not calculate match scores.
 
 Ashtadhyayi MCP is listed as an in-progress personal project based on its local repository documentation. Public hosting and broader evaluation remain in progress; no live demo or general Sanskrit reasoning accuracy is claimed.
 
@@ -52,7 +52,7 @@ Ashtadhyayi MCP is listed as an in-progress personal project based on its local 
 - Update experience, skills, education, professional case studies, and public repository descriptions in `src/content/portfolio.js`.
 - Keep client work sanitized. Professional work and public projects are rendered in separate sections.
 - Add a case study by adding an entry to `projects`, including its `slug`, `flow`, `sections`, category, and status. The route is created automatically at `/#/work/<slug>`.
-- Change curated role highlights and relevance descriptions in `roleEvidence` in `src/pages/Home.jsx`.
+- Change curated role summaries, highlights, and relevance descriptions in `src/content/roleFit.js`.
 
 ## Images and resume
 

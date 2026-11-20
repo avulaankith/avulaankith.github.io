@@ -9,111 +9,8 @@ import {
 } from "../content/portfolio";
 import SiteHeader from "../components/SiteHeader";
 import ProjectVisual from "../components/ProjectVisual";
+import { roleEvidence } from "../content/roleFit";
 
-const roleEvidence = {
-  "Software Engineer": {
-    skills: ["Python", "JavaScript", "React", "REST APIs", "SQL", "Git"],
-    highlights: [
-      {
-        key: "full-stack-financial-applications",
-        reason: "API boundaries, React interfaces, and service integration.",
-      },
-      {
-        key: "secure-event-ingestion",
-        reason: "Event-driven workflows and reliable file processing.",
-      },
-      {
-        key: "financial-data-platform",
-        reason: "Incremental processing and data platform design.",
-      },
-    ],
-  },
-  "Backend Engineer": {
-    skills: ["Python", "REST APIs", "Flask", "SQL", "Azure Functions"],
-    highlights: [
-      {
-        key: "secure-event-ingestion",
-        reason: "Service authorization, event handling, and ingestion workflows.",
-      },
-      {
-        key: "financial-data-platform",
-        reason: "Data pipelines, incremental updates, and reliability.",
-      },
-      {
-        key: "full-stack-financial-applications",
-        reason: "Python services and REST API contracts.",
-      },
-    ],
-  },
-  "Full Stack Engineer": {
-    skills: ["React", "JavaScript", "Python", "REST APIs", "Azure Functions"],
-    highlights: [
-      {
-        key: "full-stack-financial-applications",
-        reason: "React dashboards connected to Python services.",
-      },
-      {
-        key: "Sandhi Ninja",
-        reason: "Interactive learning UI, arcade gameplay, and a rule-based analysis API.",
-      },
-      {
-        key: "secure-document-access",
-        reason: "Portal-to-service authorization design.",
-      },
-    ],
-  },
-  "AI Engineer": {
-    skills: ["RAG", "LangChain", "Azure AI Search", "Python", "Evaluation"],
-    highlights: [
-      {
-        key: "document-intelligence",
-        reason: "Document retrieval, grounding, and evaluation.",
-      },
-      {
-        key: "Ashtadhyayi MCP",
-        reason: "Source-backed MCP tools and a reference agent; in progress.",
-      },
-      {
-        key: "governed-ai-agents",
-        reason: "Metadata-driven SQL generation, schema validation, and governed execution.",
-      },
-    ],
-  },
-  "Machine Learning Engineer": {
-    skills: ["PyTorch", "TensorFlow", "Scikit-learn", "Model evaluation"],
-    highlights: [
-      {
-        key: "samsung-audio-source-separation",
-        reason: "Audio preprocessing, U-Net model evaluation, and GPU inference optimization.",
-      },
-      {
-        key: "Ocular Disease Detection",
-        reason: "Computer-vision classification work.",
-      },
-      {
-        key: "Highway Lane Segmentation",
-        reason: "Semantic segmentation for road imagery.",
-      },
-    ],
-  },
-  "GenAI Engineer": {
-    skills: ["RAG", "LangChain", "Azure OpenAI", "Azure AI Search"],
-    highlights: [
-      {
-        key: "Ashtadhyayi MCP",
-        reason: "Provenance-aware retrieval and grounded agent experiments; in progress.",
-      },
-      {
-        key: "document-intelligence",
-        reason: "RAG pipelines and evidence-backed responses.",
-      },
-      {
-        key: "governed-ai-agents",
-        reason: "Financial question answering grounded in business definitions and lakehouse schemas.",
-      },
-    ],
-  },
-};
 
 function SectionHeading({ eyebrow, title, description, id }) {
   return (
@@ -169,7 +66,7 @@ function ProjectCard({ project, index }) {
 }
 
 function RoleFit() {
-  const [role, setRole] = useState("Software Engineer");
+  const [role, setRole] = useState("Overview");
   const evidence = roleEvidence[role];
   const matches = evidence.highlights.map(({ key, reason }) => {
     const project = projects.find((item) => item.slug === key);
@@ -183,44 +80,57 @@ function RoleFit() {
   });
 
   return (
-    <section className="fit-section section-wrap" id="fit">
-      <SectionHeading
-        eyebrow="Recruiter tool"
-        title="Explore my fit"
-        description="Choose a role to explore selected projects and the engineering skills they demonstrate."
-      />
+    <section className="fit-section section-wrap" id="fit" aria-labelledby="fit-title">
+      <div className="fit-intro">
+        <div className="section-heading">
+          <p className="eyebrow">For hiring teams & curious collaborators</p>
+          <h2 id="fit-title">Explore my fit</h2>
+          <p className="section-description">Start with the overview, or choose the role you’re hiring for. See what I bring, where I’ve applied it, and the work behind it.</p>
+        </div>
+        <a className="fit-resume-link" href={profile.resume} download="Ankith-Reddy-Avula-Resume.pdf">Download resume <span>PDF</span></a>
+      </div>
       <div className="fit-panel">
         <div className="fit-controls">
-          <label htmlFor="role-select">Role focus</label>
-          <select
-            id="role-select"
-            value={role}
-            onChange={(event) => setRole(event.target.value)}
-          >
+          <p className="fit-control-label" id="fit-role-label">Choose a focus</p>
+          <div className="fit-role-options" role="group" aria-labelledby="fit-role-label">
             {Object.keys(roleEvidence).map((option) => (
-              <option key={option}>{option}</option>
-            ))}
-          </select>
-        </div>
-        <div className="fit-results" aria-live="polite">
-          <p className="eyebrow">Evidence for {role}</p>
-          <div className="tag-list fit-skills">
-            {evidence.skills.map((skill) => (
-              <span className="tag" key={skill}>
-                {skill}
-              </span>
+              <button key={option} type="button" aria-pressed={role === option} onClick={() => setRole(option)}>
+                <span>{option}</span><span className="fit-selection" aria-hidden="true">{role === option ? "✓" : "+"}</span>
+              </button>
             ))}
           </div>
-          <h3>Project highlights</h3>
-          <ul>
+          <div className="fit-profile-note">
+            <span>Based in</span>
+            <strong>{profile.location}</strong>
+            <Link to="/?section=experience">View career timeline</Link>
+          </div>
+        </div>
+        <div className="fit-results" aria-live="polite" aria-atomic="true">
+          <p className="eyebrow">{role === "Overview" ? "Software · Data · Applied AI" : role}</p>
+          <h3>{evidence.headline}</h3>
+          <p className="fit-summary">{evidence.summary}</p>
+          <div className="fit-contribution">
+            <h4>What I bring</h4>
+            <ul>{evidence.strengths.map((strength) => <li key={strength}>{strength}</li>)}</ul>
+          </div>
+          <div className="tag-list fit-skills" aria-label="Relevant technologies">
+            {evidence.skills.map((skill) => <span className="tag" key={skill}>{skill}</span>)}
+          </div>
+          <div className="fit-evidence-heading"><h4>See it in the work</h4><span>3 selected examples</span></div>
+          <div className="fit-evidence-grid">
             {matches.map((project) => (
-              <li key={project.title}>
-                <Link to={project.to}>{project.title} <ArrowIcon /></Link>
-                <p className="fit-project-reason">{project.reason}</p>
-                <span>{project.status}</span>
-              </li>
+              <Link className="fit-evidence-card" key={project.title} to={project.to}>
+                <span className="fit-evidence-status">{project.status}</span>
+                <h5>{project.title}</h5>
+                <p>{project.reason}</p>
+                <span className="fit-evidence-action">Explore this work</span>
+              </Link>
             ))}
-          </ul>
+          </div>
+          <div className="fit-contact">
+            <div><h4>Have a role or project in mind?</h4><p>Let’s talk about your team and the problem you’re solving.</p></div>
+            <a className="button button--primary" href={`mailto:${profile.email}?subject=${encodeURIComponent(role === "Overview" ? "Let’s discuss an opportunity" : `${role} opportunity`)}`}>Start a conversation</a>
+          </div>
         </div>
       </div>
     </section>
