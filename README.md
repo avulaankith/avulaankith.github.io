@@ -43,7 +43,7 @@ Updating GitHub Pages does not update that separate deployment.
 
 ## Role-based project explorer
 
-“Explore my fit” offers an overview and seven engineering role views, including data engineering. Each view includes a contribution summary, relevant skills, three linked work examples, a resume download, and a role-specific email contact link. Content is curated in `src/content/roleFit.js`; it does not calculate match scores.
+“Explore my fit” offers four focused role views: AI Engineer, Software Engineer, ML Engineer, and Forward Deployed Engineer. Each view includes a contribution summary, relevant skills, three linked work examples, a resume download, and a role-specific email contact link. Content is curated in `src/content/roleFit.js`; it does not calculate match scores.
 
 Ashtadhyayi MCP is listed as an in-progress personal project based on its local repository documentation. Public hosting and broader evaluation remain in progress; no live demo or general Sanskrit reasoning accuracy is claimed.
 

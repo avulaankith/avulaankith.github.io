@@ -66,7 +66,7 @@ function ProjectCard({ project, index }) {
 }
 
 function RoleFit() {
-  const [role, setRole] = useState("Overview");
+  const [role, setRole] = useState("AI Engineer");
   const evidence = roleEvidence[role];
   const matches = evidence.highlights.map(({ key, reason }) => {
     const project = projects.find((item) => item.slug === key);
@@ -85,7 +85,7 @@ function RoleFit() {
         <div className="section-heading">
           <p className="eyebrow">For hiring teams & curious collaborators</p>
           <h2 id="fit-title">Explore my fit</h2>
-          <p className="section-description">Start with the overview, or choose the role you’re hiring for. See what I bring, where I’ve applied it, and the work behind it.</p>
+          <p className="section-description">Choose the role you’re hiring for. See what I bring, where I’ve applied it, and the work behind it.</p>
         </div>
         <a className="fit-resume-link" href={profile.resume} download="Ankith-Reddy-Avula-Resume.pdf">Download resume <span>PDF</span></a>
       </div>
@@ -106,7 +106,7 @@ function RoleFit() {
           </div>
         </div>
         <div className="fit-results" aria-live="polite" aria-atomic="true">
-          <p className="eyebrow">{role === "Overview" ? "Software · Data · Applied AI" : role}</p>
+          <p className="eyebrow">{role}</p>
           <h3>{evidence.headline}</h3>
           <p className="fit-summary">{evidence.summary}</p>
           <div className="fit-contribution">
@@ -129,7 +129,7 @@ function RoleFit() {
           </div>
           <div className="fit-contact">
             <div><h4>Have a role or project in mind?</h4><p>Let’s talk about your team and the problem you’re solving.</p></div>
-            <a className="button button--primary" href={`mailto:${profile.email}?subject=${encodeURIComponent(role === "Overview" ? "Let’s discuss an opportunity" : `${role} opportunity`)}`}>Start a conversation</a>
+            <a className="button button--primary" href={`mailto:${profile.email}?subject=${encodeURIComponent(`${role} opportunity`)}`}>Start a conversation</a>
           </div>
         </div>
       </div>
